@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Miniature Props and Decor » (Leo39994).
+
+     LE MEILLEUR LOT DES SIX, et de loin : 158 de ses 216 defs heritent d'une base abstraite
+     nommee PropBuildingOnTopBase, qui pose deja altitudeLayer BuildingOnTop, isEdifice false et
+     passability Standable. Elles sont donc conformes sans rien patcher d'autre que les tags.
+
+     Et le mod est deja range par piece - un fichier de defs par piece de la maison. La
+     repartition ci-dessous suit ce rangement plutot que mon jugement : c'est l'auteur qui a
+     trie, pas moi.
+
+     Les salles de bain, bureaux, hopitaux, temples et ateliers vont en chambre, faute de mieux :
+     Knick Knacks n'a que deux categories, et elles sont portees par du C#.
+
+     NON REPRIS :
+     - Buildings_Decals.xml (42 defs) : ce sont des logos au sol, en altitudeLayer FloorCoverings.
+       Ils relevent de Colonists' Deco, pas d'ici.
+     - Buildings_Urban (cones de chantier), Buildings_Industrial (masque a gaz),
+       Buildings_Mechs (bouclier Aegis) : rien a faire sur une table de chevet.
+     - Dix objets de Buildings_Misc : caisses de munitions, ravitaillement d'urgence, terminal de
+       drone, composants. On garde les souvenirs personnels - plaques d'identite, medaillon,
+       pin's, brassard, pieces et cristaux - pas l'intendance militaire. -->
+
+  <!-- Bedroom : 9 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_SummerActivity2020_suit"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Skull_Cap"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_FoldedLaundry"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Temperature_Display"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Clock_Electronic"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Alarm_Clock"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RCCB_Heavy_Coat"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Red_Gloves"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_Slippers"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Children : 21 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Mr_Pizza"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Doggo_NoOne"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RCCB_Decoration"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Orange_Cat_Doll"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RCCB_Sandbox_Miniature"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Cerberus"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_SPzh3000Architect"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Team_Gacha_Egg"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_BabyBottle"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Jupiter_Cannon"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_M4_SOPMOD_II_Jr"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Qj2016_floordeco"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Stuffeddoll"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Ceramic_Doll"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Dinergate_A"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Dinergate_B"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Zuccheros_Protection"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Bonded_Dolls"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Teddy_Rag-Doll"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Mr_P_zza"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_White_Rabbit"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Bathroom : 9 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_ToothbrushSet"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_PumpBottle"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_ShampooRack"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_SoapRack"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_TowelRack"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Comb"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Hair_Dryer"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Hair_Iron"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Clukay_Hairclip"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Office : 9 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_Printer"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_WaxSealSet"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_InkwellQuill"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_PenHolder"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_EquilibriumScales"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_DraftingCompass"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_NoteBook"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_ParchmentRolls"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Rulers"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Recreation : 13 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_Ham_Radio"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_SportsEquipment"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_GameConsole"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Gamepad"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Laptop_BSoD"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_2022WhiteVActivity_K5_deco"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RCCB_Camera"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Exquisite_wigs"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Piggy_Bank"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_Radio"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_RubiksCube"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Black_Card"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Boxing_Glove"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Hospital : 6 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_MortarPestle"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Medical_Bandages"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_Pills_A"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_Pills_B"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_Pills_C"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Props_PillsSleeping"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Instrument : 10 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Accordion"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Guzheng"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Oboe"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Snare_Drum"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Trombone"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Trumpet"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Violin"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Cello"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Guitar"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Metronome"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Temple : 4 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_White_Mask"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_WhiteV2024_03_deco"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Censer"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Oath_Ring"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Workshop : 1 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Small_Notepad"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Misc : 13 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Sardis_Gold"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Quartz_Sand"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Shiny_Coin"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Snowman"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Sz2017_02_deco"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Epiphyllum_Container"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Collapse_Crystal"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Quartz"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Fated_Encounter"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Damaged_Dog_Tags"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Mysterious_Necklace"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Army_Lapel_Pins"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Yellow_Armband"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Dining : 21 objets -> DiningRoomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Qj2016_deco"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Sz2017_03_deco"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_SimpleTeaSet"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Pumpkin_Candy_Box"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Fast_Food_A"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Fast_Food_B"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Fast_Food_C"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_White_Coffee_Cup"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Coffee_Mill"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Basque_Cheesecake"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Black_Forest_Cake"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Opera_Cake"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Roll_Cake"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Strawberry_Custard_Cheesecake"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Tiramisu"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Macaron"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_2022Ots14_deco"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Honey"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Ration"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Place_Setting"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_45_Table_Mat"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Kitchen : 7 objets -> DiningRoomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Kettle"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_KitchenUtensils"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_KnifeBlock"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Microwave"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Moka_Pot"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_SpiceRack"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Toaster"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- Furniture : 21 objets -> BedroomClutter + DiningRoomClutter -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Bust_Sculpture"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Tsg2017_03_deco"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Qj2016_vase"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Decorative_Bouquet"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Fragments_of_Thought"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Umbrella"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Anniversary2020_butterfly"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_2022HK416_deco"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL2_Suomi_Lantern"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PNC_Orrery"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_PoluxTree"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="BonsaiTreePot_TreeAnima"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_ArcheanTree"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_HarbingerTree"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_GauranlenTree"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Hourglass"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_ReedDiffuser"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_TissuesBox"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Blue_ButterflyL"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GFL_Blue_ButterflyR"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Prop_Cushion"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

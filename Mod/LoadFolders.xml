@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.6>
+		<li>/</li>
+		<!-- Racine : About seul. Chaque lot de patchs est conditionne a son mod source, sinon
+		     ses xpath echoueraient bruyamment. Un patch dont le xpath ne matche pas n'est pas
+		     silencieux en 1.6 : il ecrit une erreur rouge par operation. -->
+		<li IfModActive="leo.propsdecor">MiniatureProps</li>
+		<li IfModActive="runnelatki.rabbieracemod">RabbieRace</li>
+		<li IfModActive="ucp.walldecorations">WallDecorations</li>
+		<li IfModActive="unagi.funiture.build.window">UNAGIWall</li>
+		<li IfModActive="runnelatki.rabbieracemod">RabbieWall</li>
+		<li IfModActive="ponpeco.pfkidsroom">PonpecoKids</li>
+		<li IfModActive="brucethemoose.hotspring">GerryHotspring</li>
+		<li IfModActive="seti.random.decor">MagicalDecor</li>
+		<li IfModActive="mgatwood.housedecor">ATWHouse</li>
+		<li IfModActive="gmmp.graveyard">GerryGraveyard</li>
+		<li IfModActive="whaley.whaleysprops">WhaleysProps</li>
+		<li IfModActive="mos.victoriandecorations">Victorian</li>
+		<li IfModActive="lunartika.os">OfficeSupplies</li>
+		<li IfModActive="dsp.lun">DinerSupplies</li>
+		<li IfModActive="zal.toomanyprops">TooManyProps</li>
+		<li IfModActive="mo.decorationsluxury">GorgeousBanquet</li>
+		<li IfModActive="ucp.tabletopdecorations">TabletopDecorations</li>
+		<li IfModActive="sarg.alphapropsparks">AlphaPropsParks</li>
+	</v1.6>
+</loadFolders>

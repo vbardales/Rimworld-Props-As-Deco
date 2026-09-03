@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Magical Decor Compilation » (Seti).
+
+     Six bougies et candelabres, tous deja conformes. Ils vont dans les deux pieces : une bougie
+     est aussi bien sur une table de chevet que sur une table de repas.
+
+     Ce mod exige Medieval Overhaul comme prealable. -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Seti_Candle_Blood"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Seti_Candles_Blood"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Seti_Candle_Magic"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Seti_Candles_Magic"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Seti_Candelabra_Blood"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Seti_Candelabra_Magic"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

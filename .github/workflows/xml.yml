@@ -1,0 +1,33 @@
+name: xml
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Ce mod ne contient aucun code : il n'y a rien a compiler. Ce qui peut casser, c'est du XML
+# mal forme ou un fichier de patch qui ne se charge pas. On verifie donc exactement ca.
+jobs:
+  xml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
+      - name: Every XML file is well-formed
+        run: find Mod -name '*.xml' -print0 | xargs -0 -r xmllint --noout
+
+      - name: Every folder named in LoadFolders exists
+        run: |
+          set -e
+          manquants=0
+          for d in $(grep -o '>[A-Za-z][A-Za-z0-9_]*</li>' Mod/LoadFolders.xml | sed 's/^>//;s|</li>||'); do
+            if [ ! -d "Mod/$d" ]; then echo "::error::LoadFolders reference Mod/$d, qui n'existe pas"; manquants=1; fi
+          done
+          exit $manquants
+
+      - name: LoadFolders.xml is capitalised the way RimWorld looks it up
+        run: test -f Mod/LoadFolders.xml

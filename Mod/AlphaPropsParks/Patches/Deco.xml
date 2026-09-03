@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Alpha Props - Parks and Gardens » (Sarg Bjornson).
+
+     82 de ses props passent le test structurel, mais c'est un catalogue de mobilier de PARC :
+     nenuphars, roseaux, topiaires, treillis, rochers, fleurs de pleine terre. Rien de tout cela
+     n'a de sens sur une table.
+
+     On ne garde donc que ce qui tient reellement dans un pot pose sur un meuble : les six
+     plantes en pot, les deux petits buissons, et les treize fleurs miniatures - celles dont le
+     libelle dit « micro », « nano », « petite », « pico », « diminu ».
+
+     NON REPRIS : les 32 AP_Flower* de pleine terre, les six nenuphars, les roseaux, les six
+     topiaires, les treillis, les rochers decoratifs, les fleurs de haie, les gousses de
+     gauranlen et les perles d'anima. Soit 61 des 82 eligibles. -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantA"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantB"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantC"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantD"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantE"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantF"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_SmallBushA"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_SmallBushB"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_Inflorescenti"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_MicroBlossom"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_MicroLily"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_PetitePrimrose"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_SpeckleDaisy"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_Lilaclette"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_Orchidlet"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_PicoRose"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_NanoTulip"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_Diminufloral"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_Lilipollen"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_MiteMallow"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AP_PettiPansy"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

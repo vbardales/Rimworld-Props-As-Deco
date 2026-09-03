@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Props as Deco</name>
+  <author>nelim</author>
+  <packageId>nelim.propsasdeco</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Hands decorative props over to the two mods that let colonists decorate by themselves, so the props get placed instead of just sitting in a build menu.
+
+Knick Knacks lets a colonist tidy a bedroom or a dining room as a recreation activity, picking from anything tagged as clutter - out of the box, the seven items it ships with. Colonists' Deco lets them hang things on walls, from its own twenty. This mod adds 348 more, drawn from seventeen decoration mods you may already have, and adds nothing you can build.
+
+No new buildable, no new architect entry, no new recreation type. The props keep their own textures, their own cost and their own place in the build menu; they simply become material a colonist can reach for.
+
+ON SURFACES, through Knick Knacks - 330 objects:
+- Miniature Props and Decor (144) - sorted by the room its own def files are named after: bedroom, children, dining, kitchen, office, bathroom, hospital, instruments, temple
+- Whaleys Props (55) - household bric-a-brac: plushes, figurines, photos, vinyl, a snowglobe
+- Office Supplies (24) - typewriters, a desk telephone, a bell, envelopes, and five things you drink
+- Alpha Props - Parks and Gardens (21) - the potted plants and the miniature blooms only
+- Victorian decorations (18) - clocks, a phonograph, a typewriter, tableware and drink
+- Ponpeco Furnitures Kids' Room (16) - wooden toys, plushes, a ball, a cushion
+- Diner Supplies (13) - burgers, fries, sodas, trays, the menu card
+- Decorations and dishes at Gorgeous banquet (10) - the dishes and the goblet
+- Gerrymon's Hotspring (6) - the food tray and the drinks
+- Magical Decor Compilation (6) - candles and candelabra
+- Too Many Props (6) - its TableDefs file: book piles, potion sets, coin piles
+- Tabletop Decorations (4) - the four that belong on a bedside table
+- Gerrymon's Graveyard (3) - two bouquets and incense sticks
+- [ATW] House Decor (2) - an African violet and candles
+- Rabbie The Moonrabbit race (2) - its two desk lamps, and only those
+
+ON WALLS, through Colonists' Deco - 18 objects:
+- Wall Decorations (12) - ivy, gauranlen leaves, mirrors, exit signs, a corkboard
+- UNAGI Decorative Furniture (4) - stained glass and decorative windows
+- Rabbie The Moonrabbit race (2) - its elegant window and wall lamp
+
+Neither engine is required. Every source mod sits behind its own LoadFolders branch, so a mod you do not have costs nothing and reports nothing. Without Knick Knacks the surface tags are inert strings that change nothing. Without Colonists' Deco the wall patches never run at all - they are guarded, because that mod's classes cannot be referenced when it is absent.
+
+Diner Supplies and Office Supplies are the only two sources covered in full, so their entries are also removed from the vanilla Furniture tab: you no longer place them, your colonists do.
+
+What is deliberately left out of each source, and why, is written at the top of every patch file.
+
+No save data of its own.</description>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>leo.propsdecor</li>
+    <li>whaley.whaleysprops</li>
+    <li>lunartika.os</li>
+    <li>dsp.lun</li>
+    <li>zal.toomanyprops</li>
+    <li>ponpeco.pfkidsroom</li>
+    <li>brucethemoose.hotspring</li>
+    <li>seti.random.decor</li>
+    <li>mgatwood.housedecor</li>
+    <li>gmmp.graveyard</li>
+    <li>runnelatki.rabbieracemod</li>
+    <li>ucp.walldecorations</li>
+    <li>unagi.funiture.build.window</li>
+    <li>Mlie.ColonistsDeco</li>
+    <li>vaguelysexual.modpackageid.goeshere</li>
+    <li>mos.victoriandecorations</li>
+    <li>mo.decorationsluxury</li>
+    <li>ucp.tabletopdecorations</li>
+    <li>sarg.alphapropsparks</li>
+  </loadAfter>
+</ModMetaData>

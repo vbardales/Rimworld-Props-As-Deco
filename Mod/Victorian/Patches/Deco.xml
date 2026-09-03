@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Victorian decorations » (小面包).
+
+     Le lot le mieux assorti des quatre : des objets personnels et de la vaisselle, tous deja
+     conformes. Repartition entre chambre et refectoire selon l'usage - ce qui se pose sur un
+     bureau va en chambre, ce qui se boit va au refectoire, l'horlogerie va aux deux.
+
+     NON REPRIS :
+     - VD_ChessBoard : c'est deja un batiment de loisir (joyKind Gaming_Cerebral). Le taguer
+       laisserait un colon poser une table d'echecs sur une table de repas.
+     - VD_HangingOilPainting : c'est la version murale. Elle releve de Colonists' Deco, pas
+       d'ici - Knick Knacks ne fait que des surfaces, il ne contient pas une occurrence de « wall ». -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_PendulumClock"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_Phonograph"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_Sandglass"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_TableLamp"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_BookPile"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_CigarBox"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_DialTelephone"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_DocumentBox"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_SuitCase"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_TobaccoPipe"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_TypeWriter"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_Map"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_OilPainting"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_GlassCup"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_TeacupPlate"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_IronWinePot"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_JohnnieWalker"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VD_CigarTray"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

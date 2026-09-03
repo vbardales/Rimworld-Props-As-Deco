@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Tabletop Decorations » (bazoka81).
+
+     Le rendement est faible ici, et c'est structurel : ce mod est un lot de bazar d'ATELIER -
+     etau, boite a outils, marteau, cle, tournevis, metre, pince, chalumeau, bras robotise. Or
+     Knick Knacks n'a que deux categories de piece, chambre et refectoire, et elles sont portees
+     par des JoyGiver en C# (JoyGiver_DecorateBedroom, JoyGiver_DecorateDiningRoom). On ne peut
+     donc PAS ajouter une categorie « atelier » en XML.
+
+     Quatre objets seulement ont leur place sur une table de chevet. Le reste attend qu'un jour
+     quelqu'un ecrive le JoyGiver correspondant. -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ucp_remote"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ucp_tablelamp"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ucp_pencil"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ucp_blueprint"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

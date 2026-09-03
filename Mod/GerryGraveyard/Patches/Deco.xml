@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Gerrymon's Misc Props: Graveyard » (Gerrymon).
+
+     RENDEMENT QUASI NUL, et c'est structurel. Mon test de conformite classait quatorze objets
+     comme posables sur une table : ce sont en realite QUATORZE PIERRES TOMBALES. Elles passent
+     le test parce qu'elles sont en 1x1 et non-edifice, pas parce qu'elles ont un sens sur un
+     meuble.
+
+     On ne garde que trois objets de recueillement, qui tiennent sur une table : les deux
+     bouquets et les batons d'encens.
+
+     NON REPRIS : les vingt-deux autres - pierres tombales de tous niveaux, statue de saint,
+     pompe et fluides d'embaumement, pelle, dessin sur pierre, couronne mortuaire, poupee. -->
+
+  <!-- GM_SmallBouquetProp : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- GM_LargeBouquetProp : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- GM_IncenseStickProp : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « [ATW] House Decor » (MG_Atwood).
+
+     Deux objets seulement : la violette africaine et les bougies.
+
+     NON REPRIS : la fenetre et les rideaux, qui sont muraux ; les deux aquariums, qui sont du
+     mobilier et non du bibelot. -->
+
+  <!-- AtwoodAfricanVioletA : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- AtwoodCandles : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AtwoodCandles"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="AtwoodCandles"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AtwoodCandles"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AtwoodCandles"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="AtwoodCandles"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AtwoodCandles"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AtwoodCandles"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

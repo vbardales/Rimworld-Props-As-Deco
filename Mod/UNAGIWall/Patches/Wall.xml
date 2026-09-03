@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « UNAGI Decorative Furniture » (UNAGI).
+
+     Quatre vitraux et fenetres decoratives, deja en 1x1 avec canPlaceOverWall.
+
+     NON REPRIS : le vitrail Rose en 3x3 et le Tate en 2x2, trop grands pour la logique de pose
+     de Colonists' Deco ; et UNAstainedglass_A, qui n'a pas canPlaceOverWall.
+
+     TOUT EST SOUS PatchOperationFindMod. Sans Colonists' Deco, `ColonistsDeco.WallDeco_Default`
+     et `ColonistsDeco.DecoModExtension` ne resolvent pas - et une `<modExtensions>` non resolue
+     fait echouer la def ENTIERE, pas seulement l'extension.
+
+     UN FindMod PAR DEF, et non un seul pour tout le fichier : `PatchOperationSequence` s'arrete
+     a la premiere operation qui echoue. Isoler chaque def evite qu'un seul echec emporte les
+     suivantes.
+
+     Les mods sont nommes deux fois, par nom affiche et par packageId, pour resister a un
+     renommage.
+
+     Chaque groupe est conditionnel : le noeud est cree s'il manque, complete s'il existe. -->
+
+  <!--===== UNAstainedglass_Maru : Round stained glass =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Round stained glass</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Round stained glass</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Medieval</li>
+                  <li>Industrial</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== UNA_Deco_WindowA : Decorative window =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Decorative window</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Decorative window</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Medieval</li>
+                  <li>Industrial</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== UNABlackWindow : Black window =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNABlackWindow"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="UNABlackWindow"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNABlackWindow"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNABlackWindow"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNABlackWindow"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Black window</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNABlackWindow"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Black window</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNABlackWindow"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNABlackWindow"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Industrial</li>
+                  <li>Spacer</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNABlackWindow"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Industrial</li>
+                    <li>Spacer</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== UNA_WallMadonew : Window ornament =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Window ornament</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Window ornament</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Medieval</li>
+                  <li>Industrial</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

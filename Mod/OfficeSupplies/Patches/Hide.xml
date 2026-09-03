@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Retire les vingt-quatre objets de « Office Supplies » de l'onglet Mobilier de l'Architecte.
+
+       POURQUOI C'EST SANS PERTE ICI, et seulement ici : les vingt-quatre defs du mod sont reprises
+       toutes les vingt-quatre par le fichier Deco.xml a cote. Couverture 100 %. Tu ne peux plus les
+       poser a la main, mais elles continuent d'apparaitre - ce sont les colons qui les posent,
+       au titre du loisir SEX_Decorating.
+
+       C'est le seul cas, avec Diner Supplies, ou masquer n'equivaut pas a supprimer. Pour
+       Miniature Props (144 sur 216) ou Alpha Props (21 sur 190), la meme operation effacerait
+       pour de bon tout ce qui n'est pas integre. Ne pas la generaliser.
+
+       UNE SEULE OPERATION : le mod ne declare pas `designationCategory` sur ses defs, il la
+       pose sur son unique base abstraite `OfficeThingsBase`. On la retire de la base, les vingt-quatre
+       enfants cessent d'en heriter.
+
+       `minifiedDef` et `thingCategories` restent : sans categorie de designation, la def n'a
+       plus de bouton dans l'Architecte, mais elle reste demontable, transportable et rangeable
+       normalement. -->
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[@Name="OfficeThingsBase"]/designationCategory</xpath>
+  </Operation>
+
+</Patch>

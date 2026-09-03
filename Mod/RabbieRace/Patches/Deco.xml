@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Rabbie The Moonrabbit race » (Runne Latki).
+
+       Deux objets seulement, sur 41 batiments. Ce mod de race livre surtout un ensemble de
+       mobilier complet - lits, canapes, chaises, tabourets, bureau, commode, etagere, lampadaires,
+       pot de fleurs, portes, mur - qui releve du systeme de styles, pas du bazar de table.
+
+       DEUX EXCLUSIONS QUI COMPTENT, reperees a la lecture et non par le test structurel :
+
+       - LSK_RB_Laptop passe tous les criteres, mais son thingClass est `Building_WorkTable` :
+         c'est un ETABLI, avec 60 W de consommation et un onglet de production. Le taguer
+         laisserait un colon poser un poste de travail sur une table de repas.
+       - LSK_RB_Printer est la FACILITY de cet etabli - le portable le nomme dans son
+         `CompProperties_AffectedByFacilities`. Le disperser au hasard casserait la paire.
+
+       Les deux lampes retenues sont fonctionnelles, elles eclairent vraiment
+       (`CompProperties_Glower`). C'est assume : Victorian decorations a deja sa lampe de table
+       taguee ici, et une lampe allumee posee par un colon sur une table de chevet est
+       exactement l'effet recherche.
+
+       CONVERSION : les deux declarent `altitudeLayer Item`. `isEdifice` est deja a false, il n'y
+       a donc que la couche a reprendre. Conditionnel malgre tout, pour rester correct si une
+       version future deplace le champ sur une base. -->
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LSK_SHS_Lamp_Table"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="LSK_SHS_Lamp_Table"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="LSK_SHS_Lamp_Table"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="LSK_SHS_Lamp_Table"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="LSK_Stingy_Lamp_Table"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="LSK_Stingy_Lamp_Table"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="LSK_Stingy_Lamp_Table"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="LSK_Stingy_Lamp_Table"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

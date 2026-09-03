@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Wall Decorations » (bazoka81).
+
+     Douze decorations murales confiees a Colonists' Deco : un colon les accroche lui-meme au
+     titre du loisir, au lieu que tu les poses.
+
+     Elles etaient deja structurellement pretes - 1x1, altitudeLayer BuildingOnTop,
+     canPlaceOverWall, Graphic_Multi. Il ne manquait que le contrat de Colonists' Deco.
+
+     NON REPRIS :
+     - Les huit motifs de lierre en 2x1 : toutes les decos de Colonists' Deco sont en 1x1, sa
+       logique cherche une case de mur.
+     - ucp_wallswitch : c'est un `Building_PowerSwitch`, un interrupteur fonctionnel. Lui
+       remplacer son thingClass casserait sa fonction.
+     - ucp_wallsocket : porte des composants electriques, meme prudence.
+
+     TOUT EST SOUS PatchOperationFindMod. Sans Colonists' Deco, `ColonistsDeco.WallDeco_Default`
+     et `ColonistsDeco.DecoModExtension` ne resolvent pas - et une `<modExtensions>` non resolue
+     fait echouer la def ENTIERE, pas seulement l'extension.
+
+     UN FindMod PAR DEF, et non un seul pour tout le fichier : `PatchOperationSequence` s'arrete
+     a la premiere operation qui echoue. Isoler chaque def evite qu'un seul echec emporte les
+     suivantes.
+
+     Les mods sont nommes deux fois, par nom affiche et par packageId, pour resister a un
+     renommage.
+
+     Chaque groupe est conditionnel : le noeud est cree s'il manque, complete s'il existe. -->
+
+  <!--===== ucp_toiletpaper : Toilet paper =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Toilet paper</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Toilet paper</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Industrial</li>
+                  <li>Spacer</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Industrial</li>
+                    <li>Spacer</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_mirror : Wall mirror =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_mirror"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_mirror"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirror"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_mirror"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirror"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Wall mirror</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirror"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Wall mirror</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_mirror"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirror"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Industrial</li>
+                  <li>Spacer</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirror"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Industrial</li>
+                    <li>Spacer</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_mirrorlight : Lit wall mirror =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Lit wall mirror</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Lit wall mirror</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Industrial</li>
+                  <li>Spacer</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Industrial</li>
+                    <li>Spacer</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_exitsigngreen : Exit sign =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Exit sign</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Exit sign</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Industrial</li>
+                  <li>Spacer</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Industrial</li>
+                    <li>Spacer</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_exitsignred : Exit sign =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_exitsignred"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_exitsignred"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsignred"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_exitsignred"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsignred"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Exit sign</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsignred"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Exit sign</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_exitsignred"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsignred"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Industrial</li>
+                  <li>Spacer</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_exitsignred"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Industrial</li>
+                    <li>Spacer</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_corkboard : Corkboard =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_corkboard"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_corkboard"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_corkboard"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_corkboard"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_corkboard"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Corkboard</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_corkboard"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Corkboard</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_corkboard"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_corkboard"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Industrial</li>
+                  <li>Spacer</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_corkboard"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Industrial</li>
+                    <li>Spacer</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_ivyleaves : Ivy =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Ivy</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Ivy</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Neolithic</li>
+                  <li>Medieval</li>
+                  <li>Industrial</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Neolithic</li>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_ivyleavescorner : Ivy corner =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Ivy corner</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Ivy corner</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Neolithic</li>
+                  <li>Medieval</li>
+                  <li>Industrial</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Neolithic</li>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_ivyleavesinner : Ivy nook =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Ivy nook</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Ivy nook</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Neolithic</li>
+                  <li>Medieval</li>
+                  <li>Industrial</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Neolithic</li>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_ivyleavesorange : Gauranlen leaves =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Gauranlen leaves</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Gauranlen leaves</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Neolithic</li>
+                  <li>Medieval</li>
+                  <li>Industrial</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Neolithic</li>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_ivyleavescornerorange : Gauranlen corner =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Gauranlen corner</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Gauranlen corner</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Neolithic</li>
+                  <li>Medieval</li>
+                  <li>Industrial</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Neolithic</li>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <!--===== ucp_ivyleavesinnerorange : Gauranlen nook =====-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Colonists' Deco (Continued)</li>
+      <li>Mlie.ColonistsDeco</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]/thingClass</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]/thingClass</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]</xpath>
+            <value><thingClass>ColonistsDeco.WallDeco_Default</thingClass></value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]/comps</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]/comps</xpath>
+            <value>
+              <li Class="ColonistsDeco.CompProperties_Decoration">
+                <decorationName>Gauranlen nook</decorationName>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]</xpath>
+            <value>
+              <comps>
+                <li Class="ColonistsDeco.CompProperties_Decoration">
+                  <decorationName>Gauranlen nook</decorationName>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]/modExtensions</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]/modExtensions</xpath>
+            <value>
+              <li Class="ColonistsDeco.DecoModExtension">
+                <decoTechLevels>
+                  <li>Neolithic</li>
+                  <li>Medieval</li>
+                  <li>Industrial</li>
+                </decoTechLevels>
+                <decoLocationType>Wall</decoLocationType>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]</xpath>
+            <value>
+              <modExtensions>
+                <li Class="ColonistsDeco.DecoModExtension">
+                  <decoTechLevels>
+                    <li>Neolithic</li>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                  </decoTechLevels>
+                  <decoLocationType>Wall</decoLocationType>
+                </li>
+              </modExtensions>
+            </value>
+          </nomatch>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

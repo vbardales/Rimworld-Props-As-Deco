@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Ponpeco Furnitures : Kids' Room » (ponpeco).
+
+     Bazar de chambre d'enfant : ballon, coussin, trois grosses peluches, huit jouets en bois et
+     trois peluches PKC. Exactement le cas d'usage de Knick Knacks.
+
+     CONVERSION NECESSAIRE : ces objets sont en altitudeLayer BuildingBelowTop, pas BuildingOnTop.
+     Ils se dessineraient sous la table au lieu de dessus. On convertit la couche et isEdifice
+     par conditionnel, pour marcher que le champ soit declare sur la def ou herite de sa base.
+
+     NON REPRIS : les trois guirlandes de fanions, les deux rideaux et la guirlande lumineuse -
+     ce sont des elements muraux ou de plafond, ils relevent de Colonists' Deco. -->
+
+  <!-- PFK_Ball : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_Ball"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_Ball"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_Ball"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_Ball"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_Ball"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_Ball"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_Ball"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_Cushion : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_Cushion"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_Cushion"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_Cushion"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_Cushion"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_Cushion"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_Cushion"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_Cushion"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_GiantPlushie : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_GiantPlushieB : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_GiantPlushieM : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_WoodenToyS : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_WoodenToySB : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_WoodenToySC : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_WoodenToySD : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_WoodenToy : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToy"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToy"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToy"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToy"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToy"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToy"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToy"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_WoodenToyB : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_WoodenToyC : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_WoodenToyD : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_PKCRobo : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_PKCRobo"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_PKCRobo"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_PKCRobo"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_PKCRobo"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_PKCRobo"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_PKCRobo"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_PKCRobo"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PFK_PKCDog : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_PKCDog"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_PKCDog"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_PKCDog"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PFK_PKCDog"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PFK_PKCDog"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PFK_PKCDog"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PFK_PKCDog"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- PKC_DecorPlushie : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PKC_DecorPlushie"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PKC_DecorPlushie"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PKC_DecorPlushie"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PKC_DecorPlushie"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="PKC_DecorPlushie"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PKC_DecorPlushie"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PKC_DecorPlushie"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Gerrymon's Hotspring Expanded XML Only » (brucethemoose).
+
+     On ne garde que le plateau et les boissons : ils vont au refectoire. Le canard en plastique
+     part en chambre.
+
+     NON REPRIS : serviette, louche, seau, ballon de plage, bouee, bouche d'aeration et panneau
+     d'avertissement. C'est du mobilier de bassin, pas du bibelot de table. -->
+
+  <!-- GM_FoodTray : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_FoodTray"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_FoodTray"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_FoodTray"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_FoodTray"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_FoodTray"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_FoodTray"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GM_FoodTray"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- GM_DrinkAltoWine : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- GM_DrinkCoffee : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- GM_DrinkSake : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_DrinkSake"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_DrinkSake"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkSake"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_DrinkSake"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_DrinkSake"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkSake"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GM_DrinkSake"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- GM_DrinkWine : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_DrinkWine"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_DrinkWine"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkWine"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_DrinkWine"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_DrinkWine"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkWine"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GM_DrinkWine"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- GM_PoolDucky : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_PoolDucky"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_PoolDucky"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_PoolDucky"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="GM_PoolDucky"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="GM_PoolDucky"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_PoolDucky"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="GM_PoolDucky"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>
