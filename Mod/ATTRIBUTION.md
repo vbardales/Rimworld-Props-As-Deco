@@ -58,10 +58,3 @@ on a mod being present comes from its `SurfaceBlacklist.xml`.
 
 Not a line is copied from any of these mods; it is the methods that are borrowed.
 
-## Nelim's Halloween Monster Mash
-
-- **Author:** nelim, porting [KD] Killer_Diller's "Hallowen Monster Mash"
-- **Taken:** nothing.
-- **Patched in place:** two of its seven props — the unlit jack-o'-lantern and the fake spider —
-  which are moved to `BuildingOnTop`, made non-edifice, and tagged as clutter. The other five are
-  left alone: three stand on the floor, and two hang but carry no `canPlaceOverWall`.

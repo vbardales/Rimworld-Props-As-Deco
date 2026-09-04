@@ -32,7 +32,7 @@ The C# is already written in both cases and is not touched.
 **330 objects on surfaces**, from fifteen source mods. **18 on walls**, from three.
 
 Three structural conditions decide whether an object can sit on a surface: a 1x1 footprint,
-`altitudeLayer BuildingOnTop`, `isEdifice false`. Across the eighteen sources, 478 defs meet
+`altitudeLayer BuildingOnTop`, `isEdifice false`. Across the seventeen sources, 476 defs meet
 them — either directly, or after conversion for the twenty-one laid out in `BuildingBelowTop` or
 on the `Item` layer.
 
