@@ -23,5 +23,6 @@
 		<li IfModActive="mo.decorationsluxury">GorgeousBanquet</li>
 		<li IfModActive="ucp.tabletopdecorations">TabletopDecorations</li>
 		<li IfModActive="sarg.alphapropsparks">AlphaPropsParks</li>
+		<li IfModActive="nelim.halloweenmonstermash">Halloween</li>
 	</v1.6>
 </loadFolders>

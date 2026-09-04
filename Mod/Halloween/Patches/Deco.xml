@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Extrait de « Nelim's Halloween Monster Mash » (nelim.halloweenmonstermash), le portage 1.6
+     du mod de [KD] Killer_Diller.
+
+     DEUX OBJETS SUR SEPT, et le tri est semantique, pas structurel. Les sept props du portage
+     sont identiques au champ pres : HMM_PropBase, 1x1, Beaute 1, cinq buches, isInert, aucun
+     comp. Ils passent donc TOUS le test structurel une fois convertis. Le test ne dit rien de
+     ce qui a un sens sur une table - meme lecon que les quatorze pierres tombales de Gerrymon.
+
+     REPRIS : la citrouille eteinte, qui est litteralement un bibelot de table, et la fausse
+     tarentule, dont la place sur un meuble est la blague meme. La tarentule se dessine en 2x2
+     pour une empreinte de 1x1 : elle debordera du meuble, ce qui est conforme a une « tarentule
+     grandeur nature » et assume ici.
+
+     NON REPRIS, ET POURQUOI :
+
+     - Squelette sur pied, faucheuse, arbre hante : objets poses au sol, de la taille d'un pion.
+       Aucun cadre ne les prend, et sur une table ils n'auraient pas de sens.
+
+     - Fantomes en drap et chauves-souris sur ficelle : ceux-la SE SUSPENDENT - ils n'ont meme
+       pas d'ombre, shadowData a (0,0,0). Leur place est un mur, pas une table. Mais ils n'ont
+       pas canPlaceOverWall, et ce mod ne l'ajoute pas : c'est exactement la raison pour
+       laquelle le miroir et les fenetres de Rabbie ont ete ecartes dans RabbieWall/Patches. On
+       enregistre des objets deja muraux ; on n'invente pas le montage mural.
+
+     PIEGE DE NOMMAGE : HMM_Jackolantern est la citrouille ETEINTE. L'allumee n'a pas de def -
+     c'est un style de Props as Style sur la torche vanilla. Les deux dossiers de textures ne
+     different que par un L final.
+
+     Pas de PatchOperationFindMod ici : la garde est le dossier lui-meme, appele depuis
+     LoadFolders.xml sous IfModActive. -->
+
+  <!-- HMM_Jackolantern : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+  <!-- HMM_Spider : conversion de couche puis tags -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HMM_Spider"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="HMM_Spider"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="HMM_Spider"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="HMM_Spider"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="HMM_Spider"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="HMM_Spider"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="HMM_Spider"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>
