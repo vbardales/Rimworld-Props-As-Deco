@@ -6,8 +6,8 @@ on:
   pull_request:
   workflow_dispatch:
 
-# Ce mod ne contient aucun code : il n'y a rien a compiler. Ce qui peut casser, c'est du XML
-# mal forme ou un fichier de patch qui ne se charge pas. On verifie donc exactement ca.
+# This mod holds no code: there is nothing to compile. What can break is malformed XML, or a
+# patch file that fails to load. So that is exactly what gets checked.
 jobs:
   xml:
     runs-on: ubuntu-latest
@@ -23,11 +23,11 @@ jobs:
       - name: Every folder named in LoadFolders exists
         run: |
           set -e
-          manquants=0
+          missing=0
           for d in $(grep -o '>[A-Za-z][A-Za-z0-9_]*</li>' Mod/LoadFolders.xml | sed 's/^>//;s|</li>||'); do
-            if [ ! -d "Mod/$d" ]; then echo "::error::LoadFolders reference Mod/$d, qui n'existe pas"; manquants=1; fi
+            if [ ! -d "Mod/$d" ]; then echo "::error::LoadFolders names Mod/$d, which does not exist"; missing=1; fi
           done
-          exit $manquants
+          exit $missing
 
       - name: LoadFolders.xml is capitalised the way RimWorld looks it up
         run: test -f Mod/LoadFolders.xml
