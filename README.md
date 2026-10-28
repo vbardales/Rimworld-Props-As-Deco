@@ -29,7 +29,7 @@ The C# is already written in both cases and is not touched.
 
 ## What it covers
 
-**330 objects on surfaces**, from fifteen source mods. **18 on walls**, from three.
+**329 objects on surfaces**, from fifteen source mods. **18 on walls**, from three.
 
 Three structural conditions decide whether an object can sit on a surface: a 1x1 footprint,
 `altitudeLayer BuildingOnTop`, `isEdifice false`. Across the eighteen sources, 478 defs meet
@@ -46,7 +46,7 @@ were kept.
 | Office Supplies | 24 | **24** | none |
 | Alpha Props — Parks and Gardens | 82 | **21** | park furniture: water lilies, topiaries, trellises |
 | Victorian decorations | 20 | **18** | the chess board is already a recreation building; one oil painting is a wall piece |
-| Ponpeco Furnitures: Kids' Room | 22 | **16** | buntings, curtains, fairy lights are wall pieces |
+| Ponpeco Furnitures: Kids' Room | 22 | **15** | buntings, curtains, fairy lights are wall pieces |
 | Diner Supplies | 13 | **13** | none |
 | Decorations and dishes at Gorgeous banquet | 12 | **10** | the dishes yes, the signage and the guardrail no |
 | Gerrymon's Hotspring | 13 | **6** | towel, ladle, ring float: pool furniture |

@@ -26,6 +26,13 @@
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="GM_SmallBouquetProp"]/building/isEdifice</xpath>
     <match Class="PatchOperationReplace">
@@ -59,6 +66,13 @@
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="GM_LargeBouquetProp"]/building/isEdifice</xpath>
     <match Class="PatchOperationReplace">
@@ -90,6 +104,13 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]</xpath>
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_IncenseStickProp"]</xpath>
+      <value><building /></value>
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">

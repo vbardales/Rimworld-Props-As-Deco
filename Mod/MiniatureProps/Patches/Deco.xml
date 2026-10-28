@@ -24,6 +24,13 @@
        pin's, brassard, pieces et cristaux - pas l'intendance militaire. -->
 
   <!-- Bedroom : 9 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_SummerActivity2020_suit"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_SummerActivity2020_suit"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_SummerActivity2020_suit"]/building</xpath>
     <value>
@@ -32,6 +39,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Skull_Cap"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Skull_Cap"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Skull_Cap"]/building</xpath>
@@ -42,6 +56,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_FoldedLaundry"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_FoldedLaundry"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_FoldedLaundry"]/building</xpath>
     <value>
@@ -50,6 +71,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Temperature_Display"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Temperature_Display"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Temperature_Display"]/building</xpath>
@@ -60,6 +88,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Clock_Electronic"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Clock_Electronic"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Clock_Electronic"]/building</xpath>
     <value>
@@ -68,6 +103,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Alarm_Clock"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Alarm_Clock"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Alarm_Clock"]/building</xpath>
@@ -78,6 +120,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="RCCB_Heavy_Coat"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RCCB_Heavy_Coat"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="RCCB_Heavy_Coat"]/building</xpath>
     <value>
@@ -87,6 +136,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Red_Gloves"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Red_Gloves"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Red_Gloves"]/building</xpath>
     <value>
@@ -95,6 +151,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_Slippers"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_Slippers"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_Slippers"]/building</xpath>
@@ -107,6 +170,13 @@
   </Operation>
 
   <!-- Children : 21 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Mr_Pizza"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Mr_Pizza"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Mr_Pizza"]/building</xpath>
     <value>
@@ -115,6 +185,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Doggo_NoOne"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Doggo_NoOne"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Doggo_NoOne"]/building</xpath>
@@ -125,6 +202,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="RCCB_Decoration"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RCCB_Decoration"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="RCCB_Decoration"]/building</xpath>
     <value>
@@ -133,6 +217,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Orange_Cat_Doll"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Orange_Cat_Doll"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Orange_Cat_Doll"]/building</xpath>
@@ -143,6 +234,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="RCCB_Sandbox_Miniature"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RCCB_Sandbox_Miniature"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="RCCB_Sandbox_Miniature"]/building</xpath>
     <value>
@@ -151,6 +249,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Cerberus"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Cerberus"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Cerberus"]/building</xpath>
@@ -161,6 +266,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_SPzh3000Architect"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_SPzh3000Architect"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_SPzh3000Architect"]/building</xpath>
     <value>
@@ -169,6 +281,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Team_Gacha_Egg"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Team_Gacha_Egg"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Team_Gacha_Egg"]/building</xpath>
@@ -179,6 +298,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_BabyBottle"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_BabyBottle"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_BabyBottle"]/building</xpath>
     <value>
@@ -187,6 +313,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Jupiter_Cannon"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Jupiter_Cannon"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Jupiter_Cannon"]/building</xpath>
@@ -197,6 +330,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_M4_SOPMOD_II_Jr"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_M4_SOPMOD_II_Jr"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_M4_SOPMOD_II_Jr"]/building</xpath>
     <value>
@@ -205,6 +345,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Qj2016_floordeco"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Qj2016_floordeco"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Qj2016_floordeco"]/building</xpath>
@@ -215,6 +362,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Stuffeddoll"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Stuffeddoll"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Stuffeddoll"]/building</xpath>
     <value>
@@ -223,6 +377,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Ceramic_Doll"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Ceramic_Doll"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Ceramic_Doll"]/building</xpath>
@@ -233,6 +394,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Dinergate_A"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Dinergate_A"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Dinergate_A"]/building</xpath>
     <value>
@@ -241,6 +409,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Dinergate_B"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Dinergate_B"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Dinergate_B"]/building</xpath>
@@ -251,6 +426,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Zuccheros_Protection"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Zuccheros_Protection"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Zuccheros_Protection"]/building</xpath>
     <value>
@@ -259,6 +441,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Bonded_Dolls"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Bonded_Dolls"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Bonded_Dolls"]/building</xpath>
@@ -269,6 +458,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Teddy_Rag-Doll"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Teddy_Rag-Doll"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Teddy_Rag-Doll"]/building</xpath>
     <value>
@@ -278,6 +474,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Mr_P_zza"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Mr_P_zza"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Mr_P_zza"]/building</xpath>
     <value>
@@ -286,6 +489,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_White_Rabbit"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_White_Rabbit"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_White_Rabbit"]/building</xpath>
@@ -298,6 +508,13 @@
   </Operation>
 
   <!-- Bathroom : 9 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_ToothbrushSet"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_ToothbrushSet"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_ToothbrushSet"]/building</xpath>
     <value>
@@ -306,6 +523,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_PumpBottle"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_PumpBottle"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_PumpBottle"]/building</xpath>
@@ -316,6 +540,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_ShampooRack"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_ShampooRack"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_ShampooRack"]/building</xpath>
     <value>
@@ -324,6 +555,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_SoapRack"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_SoapRack"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_SoapRack"]/building</xpath>
@@ -334,6 +572,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_TowelRack"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_TowelRack"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_TowelRack"]/building</xpath>
     <value>
@@ -342,6 +587,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Comb"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Comb"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Comb"]/building</xpath>
@@ -352,6 +604,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Hair_Dryer"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Hair_Dryer"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Hair_Dryer"]/building</xpath>
     <value>
@@ -361,6 +620,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Hair_Iron"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Hair_Iron"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Hair_Iron"]/building</xpath>
     <value>
@@ -369,6 +635,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Clukay_Hairclip"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Clukay_Hairclip"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Clukay_Hairclip"]/building</xpath>
@@ -381,6 +654,13 @@
   </Operation>
 
   <!-- Office : 9 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_Printer"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_Printer"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_Printer"]/building</xpath>
     <value>
@@ -389,6 +669,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_WaxSealSet"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_WaxSealSet"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_WaxSealSet"]/building</xpath>
@@ -399,6 +686,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_InkwellQuill"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_InkwellQuill"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_InkwellQuill"]/building</xpath>
     <value>
@@ -407,6 +701,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_PenHolder"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_PenHolder"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_PenHolder"]/building</xpath>
@@ -417,6 +718,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_EquilibriumScales"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_EquilibriumScales"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_EquilibriumScales"]/building</xpath>
     <value>
@@ -425,6 +733,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_DraftingCompass"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_DraftingCompass"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_DraftingCompass"]/building</xpath>
@@ -435,6 +750,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_NoteBook"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_NoteBook"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_NoteBook"]/building</xpath>
     <value>
@@ -444,6 +766,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_ParchmentRolls"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_ParchmentRolls"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_ParchmentRolls"]/building</xpath>
     <value>
@@ -452,6 +781,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Rulers"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Rulers"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Rulers"]/building</xpath>
@@ -464,6 +800,13 @@
   </Operation>
 
   <!-- Recreation : 13 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_Ham_Radio"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_Ham_Radio"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_Ham_Radio"]/building</xpath>
     <value>
@@ -472,6 +815,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_SportsEquipment"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_SportsEquipment"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_SportsEquipment"]/building</xpath>
@@ -482,6 +832,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_GameConsole"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_GameConsole"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_GameConsole"]/building</xpath>
     <value>
@@ -490,6 +847,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Gamepad"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Gamepad"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Gamepad"]/building</xpath>
@@ -500,6 +864,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Laptop_BSoD"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Laptop_BSoD"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Laptop_BSoD"]/building</xpath>
     <value>
@@ -508,6 +879,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_2022WhiteVActivity_K5_deco"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_2022WhiteVActivity_K5_deco"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_2022WhiteVActivity_K5_deco"]/building</xpath>
@@ -518,6 +896,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="RCCB_Camera"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RCCB_Camera"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="RCCB_Camera"]/building</xpath>
     <value>
@@ -526,6 +911,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Exquisite_wigs"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Exquisite_wigs"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Exquisite_wigs"]/building</xpath>
@@ -536,6 +928,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Piggy_Bank"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Piggy_Bank"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Piggy_Bank"]/building</xpath>
     <value>
@@ -544,6 +943,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_Radio"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_Radio"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_Radio"]/building</xpath>
@@ -554,6 +960,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_RubiksCube"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_RubiksCube"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_RubiksCube"]/building</xpath>
     <value>
@@ -563,6 +976,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Black_Card"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Black_Card"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Black_Card"]/building</xpath>
     <value>
@@ -571,6 +991,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Boxing_Glove"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Boxing_Glove"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Boxing_Glove"]/building</xpath>
@@ -583,6 +1010,13 @@
   </Operation>
 
   <!-- Hospital : 6 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_MortarPestle"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_MortarPestle"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_MortarPestle"]/building</xpath>
     <value>
@@ -591,6 +1025,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Medical_Bandages"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Medical_Bandages"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Medical_Bandages"]/building</xpath>
@@ -601,6 +1042,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_Pills_A"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_Pills_A"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_Pills_A"]/building</xpath>
     <value>
@@ -609,6 +1057,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_Pills_B"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_Pills_B"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_Pills_B"]/building</xpath>
@@ -619,6 +1074,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_Pills_C"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_Pills_C"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_Pills_C"]/building</xpath>
     <value>
@@ -627,6 +1089,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Props_PillsSleeping"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Props_PillsSleeping"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Props_PillsSleeping"]/building</xpath>
@@ -639,6 +1108,13 @@
   </Operation>
 
   <!-- Instrument : 10 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Accordion"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Accordion"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Accordion"]/building</xpath>
     <value>
@@ -647,6 +1123,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Guzheng"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Guzheng"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Guzheng"]/building</xpath>
@@ -657,6 +1140,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Oboe"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Oboe"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Oboe"]/building</xpath>
     <value>
@@ -665,6 +1155,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Snare_Drum"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Snare_Drum"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Snare_Drum"]/building</xpath>
@@ -675,6 +1172,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Trombone"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Trombone"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Trombone"]/building</xpath>
     <value>
@@ -683,6 +1187,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Trumpet"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Trumpet"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Trumpet"]/building</xpath>
@@ -693,6 +1204,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Violin"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Violin"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Violin"]/building</xpath>
     <value>
@@ -701,6 +1219,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Cello"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Cello"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Cello"]/building</xpath>
@@ -711,6 +1236,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Guitar"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Guitar"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Guitar"]/building</xpath>
     <value>
@@ -719,6 +1251,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Metronome"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Metronome"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Metronome"]/building</xpath>
@@ -731,6 +1270,13 @@
   </Operation>
 
   <!-- Temple : 4 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_White_Mask"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_White_Mask"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_White_Mask"]/building</xpath>
     <value>
@@ -739,6 +1285,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_WhiteV2024_03_deco"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_WhiteV2024_03_deco"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_WhiteV2024_03_deco"]/building</xpath>
@@ -749,6 +1302,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Censer"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Censer"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Censer"]/building</xpath>
     <value>
@@ -757,6 +1317,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Oath_Ring"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Oath_Ring"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Oath_Ring"]/building</xpath>
@@ -769,6 +1336,13 @@
   </Operation>
 
   <!-- Workshop : 1 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Small_Notepad"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Small_Notepad"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Small_Notepad"]/building</xpath>
     <value>
@@ -780,6 +1354,13 @@
   </Operation>
 
   <!-- Misc : 13 objets -> BedroomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Sardis_Gold"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Sardis_Gold"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Sardis_Gold"]/building</xpath>
     <value>
@@ -788,6 +1369,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Quartz_Sand"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Quartz_Sand"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Quartz_Sand"]/building</xpath>
@@ -798,6 +1386,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Shiny_Coin"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Shiny_Coin"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Shiny_Coin"]/building</xpath>
     <value>
@@ -806,6 +1401,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Snowman"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Snowman"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Snowman"]/building</xpath>
@@ -816,6 +1418,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Sz2017_02_deco"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Sz2017_02_deco"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Sz2017_02_deco"]/building</xpath>
     <value>
@@ -824,6 +1433,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Epiphyllum_Container"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Epiphyllum_Container"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Epiphyllum_Container"]/building</xpath>
@@ -834,6 +1450,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Collapse_Crystal"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Collapse_Crystal"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Collapse_Crystal"]/building</xpath>
     <value>
@@ -842,6 +1465,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Quartz"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Quartz"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Quartz"]/building</xpath>
@@ -852,6 +1482,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Fated_Encounter"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Fated_Encounter"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Fated_Encounter"]/building</xpath>
     <value>
@@ -860,6 +1497,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Damaged_Dog_Tags"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Damaged_Dog_Tags"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Damaged_Dog_Tags"]/building</xpath>
@@ -870,6 +1514,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Mysterious_Necklace"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Mysterious_Necklace"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Mysterious_Necklace"]/building</xpath>
     <value>
@@ -879,6 +1530,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Army_Lapel_Pins"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Army_Lapel_Pins"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Army_Lapel_Pins"]/building</xpath>
     <value>
@@ -887,6 +1545,13 @@
         <li>SEX_BedroomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Yellow_Armband"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Yellow_Armband"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Yellow_Armband"]/building</xpath>
@@ -899,6 +1564,13 @@
   </Operation>
 
   <!-- Dining : 21 objets -> DiningRoomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Qj2016_deco"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Qj2016_deco"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Qj2016_deco"]/building</xpath>
     <value>
@@ -907,6 +1579,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Sz2017_03_deco"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Sz2017_03_deco"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Sz2017_03_deco"]/building</xpath>
@@ -917,6 +1596,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_SimpleTeaSet"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_SimpleTeaSet"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_SimpleTeaSet"]/building</xpath>
     <value>
@@ -925,6 +1611,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Pumpkin_Candy_Box"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Pumpkin_Candy_Box"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Pumpkin_Candy_Box"]/building</xpath>
@@ -935,6 +1628,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Fast_Food_A"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Fast_Food_A"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Fast_Food_A"]/building</xpath>
     <value>
@@ -943,6 +1643,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Fast_Food_B"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Fast_Food_B"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Fast_Food_B"]/building</xpath>
@@ -953,6 +1660,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Fast_Food_C"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Fast_Food_C"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Fast_Food_C"]/building</xpath>
     <value>
@@ -961,6 +1675,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_White_Coffee_Cup"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_White_Coffee_Cup"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_White_Coffee_Cup"]/building</xpath>
@@ -971,6 +1692,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Coffee_Mill"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Coffee_Mill"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Coffee_Mill"]/building</xpath>
     <value>
@@ -979,6 +1707,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Basque_Cheesecake"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Basque_Cheesecake"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Basque_Cheesecake"]/building</xpath>
@@ -989,6 +1724,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Black_Forest_Cake"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Black_Forest_Cake"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Black_Forest_Cake"]/building</xpath>
     <value>
@@ -997,6 +1739,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Opera_Cake"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Opera_Cake"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Opera_Cake"]/building</xpath>
@@ -1007,6 +1756,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Roll_Cake"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Roll_Cake"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Roll_Cake"]/building</xpath>
     <value>
@@ -1015,6 +1771,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Strawberry_Custard_Cheesecake"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Strawberry_Custard_Cheesecake"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Strawberry_Custard_Cheesecake"]/building</xpath>
@@ -1025,6 +1788,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Tiramisu"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Tiramisu"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Tiramisu"]/building</xpath>
     <value>
@@ -1033,6 +1803,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Macaron"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Macaron"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Macaron"]/building</xpath>
@@ -1043,6 +1820,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_2022Ots14_deco"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_2022Ots14_deco"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_2022Ots14_deco"]/building</xpath>
     <value>
@@ -1051,6 +1835,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Honey"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Honey"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Honey"]/building</xpath>
@@ -1061,6 +1852,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Ration"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Ration"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Ration"]/building</xpath>
     <value>
@@ -1070,6 +1868,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Place_Setting"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Place_Setting"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Place_Setting"]/building</xpath>
     <value>
@@ -1078,6 +1883,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_45_Table_Mat"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_45_Table_Mat"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_45_Table_Mat"]/building</xpath>
@@ -1090,6 +1902,13 @@
   </Operation>
 
   <!-- Kitchen : 7 objets -> DiningRoomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Kettle"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Kettle"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Kettle"]/building</xpath>
     <value>
@@ -1098,6 +1917,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_KitchenUtensils"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_KitchenUtensils"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_KitchenUtensils"]/building</xpath>
@@ -1108,6 +1934,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_KnifeBlock"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_KnifeBlock"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_KnifeBlock"]/building</xpath>
     <value>
@@ -1116,6 +1949,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Microwave"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Microwave"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Microwave"]/building</xpath>
@@ -1126,6 +1966,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Moka_Pot"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Moka_Pot"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Moka_Pot"]/building</xpath>
     <value>
@@ -1135,6 +1982,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_SpiceRack"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_SpiceRack"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_SpiceRack"]/building</xpath>
     <value>
@@ -1143,6 +1997,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Toaster"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Toaster"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Toaster"]/building</xpath>
@@ -1155,6 +2016,13 @@
   </Operation>
 
   <!-- Furniture : 21 objets -> BedroomClutter + DiningRoomClutter -->
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Bust_Sculpture"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Bust_Sculpture"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Bust_Sculpture"]/building</xpath>
     <value>
@@ -1164,6 +2032,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Tsg2017_03_deco"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Tsg2017_03_deco"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Tsg2017_03_deco"]/building</xpath>
@@ -1175,6 +2050,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Qj2016_vase"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Qj2016_vase"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Qj2016_vase"]/building</xpath>
     <value>
@@ -1184,6 +2066,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Decorative_Bouquet"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Decorative_Bouquet"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Decorative_Bouquet"]/building</xpath>
@@ -1195,6 +2084,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Fragments_of_Thought"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Fragments_of_Thought"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Fragments_of_Thought"]/building</xpath>
     <value>
@@ -1204,6 +2100,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Umbrella"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Umbrella"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Umbrella"]/building</xpath>
@@ -1215,6 +2118,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Anniversary2020_butterfly"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Anniversary2020_butterfly"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Anniversary2020_butterfly"]/building</xpath>
     <value>
@@ -1224,6 +2134,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_2022HK416_deco"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_2022HK416_deco"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_2022HK416_deco"]/building</xpath>
@@ -1235,6 +2152,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL2_Suomi_Lantern"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL2_Suomi_Lantern"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL2_Suomi_Lantern"]/building</xpath>
     <value>
@@ -1244,6 +2168,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="PNC_Orrery"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PNC_Orrery"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="PNC_Orrery"]/building</xpath>
@@ -1255,6 +2186,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_PoluxTree"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_PoluxTree"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_PoluxTree"]/building</xpath>
     <value>
@@ -1264,6 +2202,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="BonsaiTreePot_TreeAnima"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="BonsaiTreePot_TreeAnima"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="BonsaiTreePot_TreeAnima"]/building</xpath>
@@ -1275,6 +2220,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_ArcheanTree"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_ArcheanTree"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_ArcheanTree"]/building</xpath>
     <value>
@@ -1284,6 +2236,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_HarbingerTree"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_HarbingerTree"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_HarbingerTree"]/building</xpath>
@@ -1295,6 +2254,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_GauranlenTree"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_GauranlenTree"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_BonsaiTreePot_GauranlenTree"]/building</xpath>
     <value>
@@ -1304,6 +2270,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Hourglass"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Hourglass"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Hourglass"]/building</xpath>
@@ -1315,6 +2288,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_ReedDiffuser"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_ReedDiffuser"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_ReedDiffuser"]/building</xpath>
     <value>
@@ -1324,6 +2304,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_TissuesBox"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_TissuesBox"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_TissuesBox"]/building</xpath>
@@ -1335,6 +2322,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Blue_ButterflyL"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Blue_ButterflyL"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Blue_ButterflyL"]/building</xpath>
     <value>
@@ -1345,6 +2339,13 @@
       </buildingTags>
     </value>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GFL_Blue_ButterflyR"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GFL_Blue_ButterflyR"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GFL_Blue_ButterflyR"]/building</xpath>
     <value>
@@ -1354,6 +2355,13 @@
         <li>SEX_DiningRoomClutter</li>
       </buildingTags>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Prop_Cushion"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Prop_Cushion"]</xpath>
+      <value><building /></value>
+    </nomatch>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Prop_Cushion"]/building</xpath>

@@ -21,6 +21,13 @@
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GM_FoodTray"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_FoodTray"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="GM_FoodTray"]/building/isEdifice</xpath>
     <match Class="PatchOperationReplace">
@@ -52,6 +59,13 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]</xpath>
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkAltoWine"]</xpath>
+      <value><building /></value>
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -87,6 +101,13 @@
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="GM_DrinkCoffee"]/building/isEdifice</xpath>
     <match Class="PatchOperationReplace">
@@ -118,6 +139,13 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="GM_DrinkSake"]</xpath>
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GM_DrinkSake"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkSake"]</xpath>
+      <value><building /></value>
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -153,6 +181,13 @@
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GM_DrinkWine"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_DrinkWine"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="GM_DrinkWine"]/building/isEdifice</xpath>
     <match Class="PatchOperationReplace">
@@ -184,6 +219,13 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="GM_PoolDucky"]</xpath>
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GM_PoolDucky"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GM_PoolDucky"]</xpath>
+      <value><building /></value>
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">

@@ -44,6 +44,13 @@
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="HMM_Jackolantern"]/building/isEdifice</xpath>
     <match Class="PatchOperationReplace">
@@ -75,6 +82,13 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="HMM_Spider"]</xpath>
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="HMM_Spider"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="HMM_Spider"]</xpath>
+      <value><building /></value>
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">

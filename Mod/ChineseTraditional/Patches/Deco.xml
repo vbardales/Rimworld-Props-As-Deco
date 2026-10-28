@@ -35,6 +35,13 @@
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Chi_XiangLu"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Chi_XiangLu"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="Chi_XiangLu"]/building/isEdifice</xpath>
     <match Class="PatchOperationReplace">

@@ -34,7 +34,7 @@ updated: 2026-10-28
 
 Current state only: the front matter above is the source of truth, run lines go to `docs/runs/`.
 
-Patch-only integrations of other mods' props into Knick Knacks (surfaces, 330 objects, plus the Chinese incense burner Chi_XiangLu patched in place) and Colonists' Deco (walls, 18 objects). No C#, no def, no asset of anyone else. Source and selection notes: `Docs/CHINESE_INTEGRATION.md`, `Docs/CHINESE_MANIFEST.json`, `Docs/SOURCES.csv`. Manual scenarios and static test: `TESTING.md`.
+Patch-only integrations of other mods' props into Knick Knacks (surfaces, 329 objects, plus the Chinese incense burner Chi_XiangLu patched in place) and Colonists' Deco (walls, 18 objects). No C#, no def, no asset of anyone else. Source and selection notes: `Docs/CHINESE_INTEGRATION.md`, `Docs/CHINESE_MANIFEST.json`, `Docs/SOURCES.csv`. Manual scenarios and static test: `TESTING.md`.
 
 ## Audit 2026-10-28
 

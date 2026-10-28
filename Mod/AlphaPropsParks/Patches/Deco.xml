@@ -15,6 +15,13 @@
      topiaires, les treillis, les rochers decoratifs, les fleurs de haie, les gousses de
      gauranlen et les perles d'anima. Soit 61 des 82 eligibles. -->
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantA"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantA"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantA"]/building</xpath>
     <value>
@@ -26,6 +33,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantB"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantB"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantB"]/building</xpath>
     <value>
@@ -37,6 +51,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantC"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantC"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantC"]/building</xpath>
     <value>
@@ -48,6 +69,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantD"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantD"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantD"]/building</xpath>
     <value>
@@ -59,6 +87,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantE"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantE"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantE"]/building</xpath>
     <value>
@@ -70,6 +105,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantF"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantF"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="VFEPD_AP_PottedPlantF"]/building</xpath>
     <value>
@@ -81,6 +123,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_SmallBushA"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEPD_AP_SmallBushA"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="VFEPD_AP_SmallBushA"]/building</xpath>
     <value>
@@ -92,6 +141,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="VFEPD_AP_SmallBushB"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEPD_AP_SmallBushB"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="VFEPD_AP_SmallBushB"]/building</xpath>
     <value>
@@ -103,6 +159,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_Inflorescenti"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_Inflorescenti"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_Inflorescenti"]/building</xpath>
     <value>
@@ -114,6 +177,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_MicroBlossom"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_MicroBlossom"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_MicroBlossom"]/building</xpath>
     <value>
@@ -125,6 +195,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_MicroLily"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_MicroLily"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_MicroLily"]/building</xpath>
     <value>
@@ -136,6 +213,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_PetitePrimrose"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_PetitePrimrose"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_PetitePrimrose"]/building</xpath>
     <value>
@@ -147,6 +231,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_SpeckleDaisy"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_SpeckleDaisy"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_SpeckleDaisy"]/building</xpath>
     <value>
@@ -158,6 +249,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_Lilaclette"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_Lilaclette"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_Lilaclette"]/building</xpath>
     <value>
@@ -169,6 +267,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_Orchidlet"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_Orchidlet"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_Orchidlet"]/building</xpath>
     <value>
@@ -180,6 +285,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_PicoRose"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_PicoRose"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_PicoRose"]/building</xpath>
     <value>
@@ -191,6 +303,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_NanoTulip"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_NanoTulip"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_NanoTulip"]/building</xpath>
     <value>
@@ -202,6 +321,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_Diminufloral"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_Diminufloral"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_Diminufloral"]/building</xpath>
     <value>
@@ -213,6 +339,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_Lilipollen"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_Lilipollen"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_Lilipollen"]/building</xpath>
     <value>
@@ -224,6 +357,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_MiteMallow"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_MiteMallow"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_MiteMallow"]/building</xpath>
     <value>
@@ -235,6 +375,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AP_PettiPansy"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AP_PettiPansy"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AP_PettiPansy"]/building</xpath>
     <value>

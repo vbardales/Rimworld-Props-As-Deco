@@ -30,5 +30,16 @@ Assert ($null -eq $m.incompatibleWith) 'Stale incompatibility with the source mo
 Assert ($m.name -eq 'Props as Deco' -and $m.author -eq 'Nelim') 'Name or author changed'
 # Every IfModActive id of LoadFolders is declared in loadAfter (case-insensitive), so load order and activation use the same ids.
 $declared=@($m.loadAfter.li | ForEach-Object {$_.ToLower()})
-foreach($li in @($lf.SelectNodes('/loadFolders/v1.6/li[@IfModActive]'))){Assert ($declared -contains $li.GetAttribute('IfModActive').ToLower()) "IfModActive id not in loadAfter: $($li.GetAttribute('IfModActive'))"}
+foreach($li in @($lf.SelectNodes('/loadFolders/v1.6/li[@IfModActive]'))){foreach($id in $li.GetAttribute('IfModActive').Split(',')){Assert ($declared -contains $id.Trim().ToLower()) "IfModActive id not in loadAfter: $id"}}
+# Patches run before inheritance: an xpath through /building matches nothing on a def that only inherits it, so each such def first gets its own <building/>.
+foreach($pf in @(Get-ChildItem (Join-Path $ModPath '*/Patches/Deco.xml'))){
+  [xml]$px=Get-Content $pf.FullName
+  $ops=@($px.SelectNodes('//Operation[xpath]'))
+  $names=@(); foreach($o in $ops){ if($o.xpath -match 'defName="([^"]+)"\]/building'){ $names+=$Matches[1] } }
+  foreach($d in ($names | Select-Object -Unique)){
+    $key='defName="'+$d+'"]/building'
+    $first=$null; foreach($o in $ops){ if($o.xpath.Contains($key)){ $first=$o; break } }
+    Assert ($null -ne $first -and $first.OuterXml.Contains('ensure-own-building')) "$($pf.Directory.Parent.Name): $d has no ensure-own-building before its building operations"
+  }
+}
 Write-Output "PASS: $count assertions; XML, no copied asset, guarded patch folder, Chi_XiangLu-only xpath, tags, optional dependency, IfModActive ids in loadAfter. No in-game execution."

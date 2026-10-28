@@ -20,6 +20,13 @@
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]/building/isEdifice</xpath>
     <match Class="PatchOperationReplace">
@@ -52,6 +59,13 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="AtwoodCandles"]</xpath>
       <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="AtwoodCandles"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AtwoodCandles"]</xpath>
+      <value><building /></value>
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">

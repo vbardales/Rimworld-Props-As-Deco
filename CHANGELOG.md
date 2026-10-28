@@ -7,7 +7,7 @@ This file serves the repository and the drafting of the Steam release notes; Rim
 
 First version. RimWorld 1.6. No code, no def, no file of anyone else's: only xpath patches.
 
-### Surfaces: 330 objects handed to Knick Knacks
+### Surfaces: 329 objects handed to Knick Knacks
 
 Fifteen source mods. The objects receive `SEX_Clutter` plus `SEX_BedroomClutter` or
 `SEX_DiningRoomClutter` depending on the room. A colonist on recreation fetches them and puts them down.

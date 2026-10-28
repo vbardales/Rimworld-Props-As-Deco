@@ -10,6 +10,13 @@
      NON REPRIS : BanquetSignage et LuxuryGuardrail, qui sont du decor de salle et non de la
      vaisselle - un colon n'a pas a poser un panneau sur une table. -->
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="BakedSnail_Buliding"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="BakedSnail_Buliding"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="BakedSnail_Buliding"]/building</xpath>
     <value>
@@ -20,6 +27,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="GooseLiver_Buliding"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="GooseLiver_Buliding"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="GooseLiver_Buliding"]/building</xpath>
     <value>
@@ -30,6 +44,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="InsectJellyPudding_Buliding"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="InsectJellyPudding_Buliding"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="InsectJellyPudding_Buliding"]/building</xpath>
     <value>
@@ -40,6 +61,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Oyster_Buliding"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Oyster_Buliding"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Oyster_Buliding"]/building</xpath>
     <value>
@@ -50,6 +78,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Steak_Buliding"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Steak_Buliding"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Steak_Buliding"]/building</xpath>
     <value>
@@ -60,6 +95,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="StrawberryCake_Buliding"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="StrawberryCake_Buliding"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="StrawberryCake_Buliding"]/building</xpath>
     <value>
@@ -70,6 +112,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="LuxuryBeer_Buliding"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="LuxuryBeer_Buliding"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="LuxuryBeer_Buliding"]/building</xpath>
     <value>
@@ -80,6 +129,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="BerrySparklingWater_Buliding"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="BerrySparklingWater_Buliding"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="BerrySparklingWater_Buliding"]/building</xpath>
     <value>
@@ -90,6 +146,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="ChocolateCake_Buliding"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ChocolateCake_Buliding"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="ChocolateCake_Buliding"]/building</xpath>
     <value>
@@ -100,6 +163,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional"><!-- ensure-own-building -->
+    <xpath>Defs/ThingDef[defName="Goblet"]/building</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Goblet"]</xpath>
+      <value><building /></value>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Goblet"]/building</xpath>
     <value>

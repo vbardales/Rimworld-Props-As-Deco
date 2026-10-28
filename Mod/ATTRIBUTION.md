@@ -11,7 +11,7 @@ them.
 ## The two engines
 
 - **Knick Knacks — Let your colonists decorate!** (VaguelySexual,
-  [3595196942](https://steamcommunity.com/sharedfiles/filedetails/?id=3595196942)) — 330 surface objects.
+  [3595196942](https://steamcommunity.com/sharedfiles/filedetails/?id=3595196942)) — 329 surface objects.
   Its whole registry lives in `buildingTags`, which are plain strings: adding them cannot break
   anything when it is absent.
 - **Colonists' Deco (Continued)** (Mlie, after the original,
@@ -32,7 +32,7 @@ Nothing is taken from any of them. The number is how many objects are handed to 
 | Office Supplies | LUNARTIKA | [3394085110](https://steamcommunity.com/sharedfiles/filedetails/?id=3394085110) | 24 |
 | Alpha Props — Parks and Gardens | Sarg Bjornson | [3146268928](https://steamcommunity.com/sharedfiles/filedetails/?id=3146268928) | 21 |
 | Victorian decorations | 小面包 | [2937276828](https://steamcommunity.com/sharedfiles/filedetails/?id=2937276828) | 18 |
-| Ponpeco Furnitures : Kids' Room | ponpeco | [3367310887](https://steamcommunity.com/sharedfiles/filedetails/?id=3367310887) | 16 |
+| Ponpeco Furnitures : Kids' Room | ponpeco | [3367310887](https://steamcommunity.com/sharedfiles/filedetails/?id=3367310887) | 15 |
 | Diner Supplies | LUNARTIKA | [3501336537](https://steamcommunity.com/sharedfiles/filedetails/?id=3501336537) | 13 |
 | Decorations and dishes at Gorgeous banquet | mo | [3027639868](https://steamcommunity.com/sharedfiles/filedetails/?id=3027639868) | 10 |
 | Gerrymon's Hotspring Expanded | brucethemoose | [3765052370](https://steamcommunity.com/sharedfiles/filedetails/?id=3765052370) | 6 |
