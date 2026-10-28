@@ -1,0 +1,5 @@
+# Pass "walls": Colonists Deco and two wall sources.
+# Add each source hard dependency here if the first run names one.
+Mlie.ColonistsDeco                    3511154027
+ucp.WallDecorations                   2546782400
+UNAGI.Funiture.Build.window           3379047800

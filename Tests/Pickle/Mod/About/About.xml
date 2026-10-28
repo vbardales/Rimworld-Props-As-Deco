@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Props as Deco - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.propsasdeco.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game functional tests for Props as Deco, run by Pickle. Development only: never published.
+
+The mod is nothing but xpath patches, so what only a running game can show is whether they apply: a patch whose xpath matches nothing writes a red error per operation. Each pass stages one family of source mods (see the wsl-deps.*.map files) and the scenarios load a save and require a clean log.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.propsasdeco</packageId>
+      <displayName>Props as Deco</displayName>
+    </li>
+  </modDependencies>
+</ModMetaData>

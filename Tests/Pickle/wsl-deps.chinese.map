@@ -1,0 +1,4 @@
+# Pass "chinese": Knick Knacks and the Chinese source, for the incense burner patch.
+# Prerequisites first. The Chinese source may need more than Core: add its hard dependencies here if the first run names one.
+VaguelySexual.ModPackageId.GoesHere   3595196942
+Dajian.ChiTeaditional.Expanded        2877536640
