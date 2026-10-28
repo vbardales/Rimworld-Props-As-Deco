@@ -1,0 +1,885 @@
+{
+  "dependencies": {
+    "optional": [
+      "vaguelysexual.modpackageid.goeshere"
+    ],
+    "pendingForDeferredPorcelain": [
+      "CiPian",
+      "ceramic furnaces and research"
+    ],
+    "required": [
+      "Core"
+    ]
+  },
+  "sourcePackage": "Dajian.ChiTeaditional.Expanded",
+  "privateOnly": false,
+  "licence": "forbidden (assets); patched in place, nothing copied",
+  "sourceWorkshop": "2877536640",
+  "selection": [
+    {
+      "defName": "ZhuanZhuo",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml",
+      "size": "(3,3)",
+      "drawSize": "(4.5,4.5)"
+    },
+    {
+      "defName": "ZhongHuaJiaJu_Chuang",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml",
+      "size": "(2,2)",
+      "drawSize": "(4,4)"
+    },
+    {
+      "defName": "SZ_LuoHanChuangYi",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml",
+      "size": "(1,2)",
+      "drawSize": "(3.0,3.0)"
+    },
+    {
+      "defName": "SZ_DianLiKangA",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml",
+      "size": "(3,2)",
+      "drawSize": "(3,2.1)"
+    },
+    {
+      "defName": "SZ_RanLiaoKangA",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml",
+      "size": "(3,2)",
+      "drawSize": "(3,2.1)"
+    },
+    {
+      "defName": "SZ_RanLiaoKangB",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml",
+      "size": "(5,2)",
+      "drawSize": "(5,2.1)"
+    },
+    {
+      "defName": "SZ_DianLiKangB",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml",
+      "size": "(5,2)",
+      "drawSize": "(5,2.1)"
+    },
+    {
+      "defName": "SZ_MiGang",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuCun.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.2,1.2)"
+    },
+    {
+      "defName": "SZ_YiGui",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuCun.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.7,2.8)"
+    },
+    {
+      "defName": "SZ_CaiJiao",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_ChuCun.xml",
+      "size": "(3,3)",
+      "drawSize": "(3.6,3.6)"
+    },
+    {
+      "defName": "Chi_Cooker",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Cook_ZaoTai.xml",
+      "size": "(2,1)",
+      "drawSize": "(3.7,1.6)"
+    },
+    {
+      "defName": "Chi_Cooker_New",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Cook_ZaoTai.xml",
+      "size": "(2,1)",
+      "drawSize": "(3.7,1.6)"
+    },
+    {
+      "defName": "SZ_XiangQiA",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Base\\Buildings_Base.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "SZ_XiangQiB",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Base\\Buildings_Base.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "Chi_HuaBiaoA",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\202310Update.xml",
+      "size": "",
+      "drawSize": "(4,4)"
+    },
+    {
+      "defName": "Chi_HuaBiaoAA",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\202310Update.xml",
+      "size": "",
+      "drawSize": "(4,4)"
+    },
+    {
+      "defName": "Chi_HuaBiaoB",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\202310Update.xml",
+      "size": "",
+      "drawSize": "(4,4)"
+    },
+    {
+      "defName": "SZ_QingHuaCiJia",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\202310Update.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.7,2.7)"
+    },
+    {
+      "defName": "SZ_HuoPen",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_Aug.Update.xml",
+      "size": "",
+      "drawSize": "(2,2)"
+    },
+    {
+      "defName": "SZ_YuanBaoChair",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_Aug.Update.xml",
+      "size": "",
+      "drawSize": "(1.25,1.25)"
+    },
+    {
+      "defName": "MaJiangYi",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.8,1.4)"
+    },
+    {
+      "defName": "MaJiangYi_Short",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.85,1.85)"
+    },
+    {
+      "defName": "XiangQiTable",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "",
+      "drawSize": "(1.4,1.4)"
+    },
+    {
+      "defName": "DengLong_Red",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "DengLong_Blue",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "DengLong_Yellow",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "DengLong_White",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "ChiTableB",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(2,1)",
+      "drawSize": "(4,3.6)"
+    },
+    {
+      "defName": "ChiTableC",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(2,2)",
+      "drawSize": "(3.8,3.7)"
+    },
+    {
+      "defName": "ChiTableSA",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.45,1.45)"
+    },
+    {
+      "defName": "ChiTableD",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(3,3)",
+      "drawSize": "(4,4)"
+    },
+    {
+      "defName": "ChiTableE",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(3,1)",
+      "drawSize": "(3.6,1.2)"
+    },
+    {
+      "defName": "SZ_FoXiang",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(3,3)",
+      "drawSize": "(4.3,4.3)"
+    },
+    {
+      "defName": "SZ_LongSofa",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(3,1)",
+      "drawSize": "(3,1)"
+    },
+    {
+      "defName": "Chi_PenJing",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(1,1)",
+      "drawSize": "(2.1,2.1)"
+    },
+    {
+      "defName": "Chi_JiaShan_A",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.35,3.2)"
+    },
+    {
+      "defName": "Chi_JiaShan_B",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.35,3.2)"
+    },
+    {
+      "defName": "Chi_DaoCaoRen",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.5,1.5)"
+    },
+    {
+      "defName": "Chi_GaoShiPai",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.55,2.55)"
+    },
+    {
+      "defName": "Chi_Gu",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.55,2.55)"
+    },
+    {
+      "defName": "Chi_ShuiJing",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.7,2.7)"
+    },
+    {
+      "defName": "Chi_LianOuPenJing",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.2,1.2)"
+    },
+    {
+      "defName": "EndTableSZ_ChuangTouGui_New",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_LinkJiaJu.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.1,1.1)"
+    },
+    {
+      "defName": "SZ_ShuZhuangTai",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_LinkJiaJu.xml",
+      "size": "(2,1)",
+      "drawSize": "(2,1)"
+    },
+    {
+      "defName": "SZ_ShuJia",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_LinkJiaJu.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.7,2.8)"
+    },
+    {
+      "defName": "SZ_ShuZhuangJing",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_ShuZhuangJing.xml",
+      "size": "(2,1)",
+      "drawSize": "(1.8,0.9)"
+    },
+    {
+      "defName": "Chi_New_AiCao",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Standing support visible in source art; not a wall decoration.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml",
+      "size": "(1,1)",
+      "drawSize": "(2,2)"
+    },
+    {
+      "defName": "Chi_New_WuCaiZong",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Standing support visible in source art; not a wall decoration.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml",
+      "size": "(1,1)",
+      "drawSize": "(2,2)"
+    },
+    {
+      "defName": "Chi_New_YuMiChuan",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Standing support visible in source art; not a wall decoration.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.5,1.5)"
+    },
+    {
+      "defName": "Chi_New_LaJiaoChuan",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Standing support visible in source art; not a wall decoration.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.5,1.5)"
+    },
+    {
+      "defName": "SZFuRug_A",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.2,2.2)"
+    },
+    {
+      "defName": "SZFuRug_C",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.1,1.1)"
+    },
+    {
+      "defName": "SZFuRug_B",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.2,2.2)"
+    },
+    {
+      "defName": "SZFuRug_D",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.1,1.1)"
+    },
+    {
+      "defName": "SZ_ZhuangShiShuJia",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.7,2.8)"
+    },
+    {
+      "defName": "Chi_XiangLu",
+      "status": "retained",
+      "owner": "PropsAsDeco",
+      "reason": "Explicit tabletop incense burner; 1x1; vanilla quality and decorative beauty facility retained.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.25,1.25)"
+    },
+    {
+      "defName": "Chi_QiZhi",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml",
+      "size": "(1,1)",
+      "drawSize": "(2.1,4.2)"
+    },
+    {
+      "defName": "SZRug_San",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml",
+      "size": "(3,3)",
+      "drawSize": "(3,3)"
+    },
+    {
+      "defName": "SZRug_Er",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml",
+      "size": "(2,2)",
+      "drawSize": "(2,2)"
+    },
+    {
+      "defName": "SZ_ShuiChi",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml",
+      "size": "(4,4)",
+      "drawSize": "(6,6)"
+    },
+    {
+      "defName": "SZ_ShuiChi_B",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml",
+      "size": "(4,4)",
+      "drawSize": "(6,6)"
+    },
+    {
+      "defName": "SZ_Mote_MaJiang",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_joy\\Joy_MaJiang.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "SZ_MaJiangZhuo",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_joy\\Joy_MaJiang.xml",
+      "size": "(2,2)",
+      "drawSize": "(3.8,3.8)"
+    },
+    {
+      "defName": "Out_DengLong_Yellow",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Misc\\SZ_Out_DengLong.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "Out_DengLong_Red",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Misc\\SZ_Out_DengLong.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "Out_DengLong_White",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Misc\\SZ_Out_DengLong.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "SZ_LinkableToolBox",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Misc\\SZ_ToolBox.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.5,2.42)"
+    },
+    {
+      "defName": "SZ_LinkChuJu",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Misc\\SZ_ToolBox.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.95,1.95)"
+    },
+    {
+      "defName": "Chi_ZhiChengZhuA",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Structure\\Buildings_Struture.xml",
+      "size": "",
+      "drawSize": "(1.3,1.3)"
+    },
+    {
+      "defName": "Chi_ZhiChengZhuB",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Structure\\Buildings_Struture.xml",
+      "size": "",
+      "drawSize": "(1.5,1.5)"
+    },
+    {
+      "defName": "Chi_ZhiChengZhuC",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Structure\\Buildings_Struture.xml",
+      "size": "",
+      "drawSize": "(1.5,1.5)"
+    },
+    {
+      "defName": "SZ_PingMen",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Structure\\Buildings_Struture.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "SZ_BanMen",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Structure\\Buildings_Struture.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "SZ_ZhuangShiWall",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Structure\\Buildings_Struture.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "SZ_SanHeTuWall",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Structure\\Buildings_Struture.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "Chi_RiceMaker_Old",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\Buildings_Cook.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.2,1.1)"
+    },
+    {
+      "defName": "Chi_RiceMaker",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\Buildings_Cook.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.4,2.4)"
+    },
+    {
+      "defName": "Chi_BaoZiMaker",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\Buildings_Cook.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.45,1.45)"
+    },
+    {
+      "defName": "Chi_BaoZiMaker_Old",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\Buildings_Cook.xml",
+      "size": "(1,1)",
+      "drawSize": "(1.45,1.45)"
+    },
+    {
+      "defName": "Chi_ChuiGuJi",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\Buildings_Cook.xml",
+      "size": "(2,1)",
+      "drawSize": "(3.9,3)"
+    },
+    {
+      "defName": "Chi_CiYao",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\Buildings_TaoCi.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.2,2.2)"
+    },
+    {
+      "defName": "SZ_CiYao_Fire",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\Buildings_TaoCi.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.4,2.4)"
+    },
+    {
+      "defName": "FermentingBarrel_BaiJiu",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\FaJiaoTong_JiuLei.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.65,2.65)"
+    },
+    {
+      "defName": "FermentingBarrel_HuangJiu",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\FaJiaoTong_JiuLei.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.8,2.8)"
+    },
+    {
+      "defName": "SZ_NianYaoLu",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Buildings_Work\\SZ_LianYaoNu.xml",
+      "size": "(2,2)",
+      "drawSize": "(2.5,2.5)"
+    },
+    {
+      "defName": "SZ_DaDiaoSu",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Builidngs_Art\\Buildings_DiaoSu.xml",
+      "size": "(2,2)",
+      "drawSize": "(4,4)"
+    },
+    {
+      "defName": "SZ_XiaoDiaoSu",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Builidngs_Art\\Buildings_DiaoSu.xml",
+      "size": "",
+      "drawSize": "(2,2)"
+    },
+    {
+      "defName": "SZ_XiongMaoDiaoSu",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Builidngs_Art\\Buildings_DiaoSu.xml",
+      "size": "(2,2)",
+      "drawSize": "(4.2,4.2)"
+    },
+    {
+      "defName": "SZ_DaoShiDiaoXiang",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Builidngs_Art\\Buildings_DiaoSu.xml",
+      "size": "(2,2)",
+      "drawSize": "(5,5)"
+    },
+    {
+      "defName": "SZ_ShiZiDiaoSu",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Builidngs_Art\\Buildings_DiaoSu.xml",
+      "size": "(2,2)",
+      "drawSize": "(3,3)"
+    },
+    {
+      "defName": "SZ_ShiZiBuilding",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Builidngs_Art\\Buildings_DiaoSu.xml",
+      "size": "(2,2)",
+      "drawSize": "(3,3)"
+    },
+    {
+      "defName": "SZ_PaiFang",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\Builidngs_Art\\Buildings_DiaoSu.xml",
+      "size": "(4,3)",
+      "drawSize": "(5,5)"
+    },
+    {
+      "defName": "Chi_QingHuaCiA",
+      "status": "deferred",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Ceramic production CiPian/furnaces has no agreed owner; keep art/meditation and production chain together.",
+      "source": "1.5\\Defs\\ThingDefs\\JinShuHeTaoCi\\Buildings_JiaJu.xml",
+      "size": "",
+      "drawSize": "(1,1)"
+    },
+    {
+      "defName": "SZ_Un_QingCi",
+      "status": "deferred",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Ceramic production CiPian/furnaces has no agreed owner; keep art/meditation and production chain together.",
+      "source": "1.5\\Defs\\ThingDefs\\JinShuHeTaoCi\\Buildings_JiaJu.xml",
+      "size": "",
+      "drawSize": ""
+    },
+    {
+      "defName": "Chi_Pingfeng",
+      "status": "excluded",
+      "owner": "unassigned; see coordinated sibling manifests",
+      "reason": "Outside small surface/wall decorations: floor furniture, functional equipment, art, structure or supporting def.",
+      "source": "1.5\\Defs\\ThingDefs\\JinShuHeTaoCi\\Buildings_JiaJu.xml",
+      "size": "(2,1)",
+      "drawSize": "(2.1,1.45)"
+    },
+    {
+      "defName": "Chi_BiangZiQi",
+      "status": "excluded",
+      "owner": "unassigned",
+      "reason": "Reviewed source image: standing flag on base, drawSize 2.7, not wall/table decor",
+      "source": "1.5/Defs/FoodDefs/MianShiNew.xml",
+      "size": "(1,1)",
+      "drawSize": "(2.7,2.7)"
+    }
+  ],
+  "note": "Since 2026-10-28 the retained entry is patched in place by Mod/ChineseTraditional, not owned. Statuses below describe the selection, not copies."
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Chinese Traditional Cultural Things Expanded (Dajian.ChiTeaditional.Expanded, Workshop 2877536640):
+       one object out of the whole furniture set, the decorative incense burner Chi_XiangLu.
+
+       Nothing is copied: the def and its texture stay in the source mod, this folder only registers
+       the burner with Knick Knacks. The guard is the folder itself, called from LoadFolders.xml
+       under IfModActive.
+
+       WHY ONE OBJECT: 1x1, no standing frame, a small bowl with incense sticks. The other floor
+       stands, lanterns, rugs, bonsai, statues, tables and beds are floor furniture or functional
+       buildings and are left alone. The ceramic chain is a producer chain with no owner here.
+
+       WHAT CHANGES, as for every other source: the layer moves from Item to BuildingOnTop, the
+       building is made non-edifice (already the case in the source, set explicitly), and the three
+       clutter tags are added. Cost, quality, Beauty facility (+6, two links, radius 2), research,
+       menu category and passability are the source's own and are not touched: the burner stays
+       buildable by hand under the source's rules, and Knick Knacks only spawns it on tables.
+       Knick Knacks creates the object with GenSpawn at no material cost; it does not carry or pay
+       for an existing one.
+
+       The source declares no 1.6 block in its LoadFolders.xml (v1.2 to v1.5 only). Whether
+       RimWorld 1.6 falls back to the v1.5 block, and so whether this patch finds its def, is
+       checked in game, not assumed. -->
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Chi_XiangLu"]/altitudeLayer</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Chi_XiangLu"]/altitudeLayer</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Chi_XiangLu"]</xpath>
+      <value><altitudeLayer>BuildingOnTop</altitudeLayer></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Chi_XiangLu"]/building/isEdifice</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Chi_XiangLu"]/building/isEdifice</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Chi_XiangLu"]/building</xpath>
+      <value><isEdifice>false</isEdifice></value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Chi_XiangLu"]/building</xpath>
+    <value>
+      <buildingTags>
+        <li>SEX_Clutter</li>
+        <li>SEX_BedroomClutter</li>
+        <li>SEX_DiningRoomClutter</li>
+      </buildingTags>
+    </value>
+  </Operation>
+
+</Patch>

@@ -32,7 +32,7 @@ The C# is already written in both cases and is not touched.
 **330 objects on surfaces**, from fifteen source mods. **18 on walls**, from three.
 
 Three structural conditions decide whether an object can sit on a surface: a 1x1 footprint,
-`altitudeLayer BuildingOnTop`, `isEdifice false`. Across the seventeen sources, 476 defs meet
+`altitudeLayer BuildingOnTop`, `isEdifice false`. Across the eighteen sources, 478 defs meet
 them — either directly, or after conversion for the twenty-one laid out in `BuildingBelowTop` or
 on the `Item` layer.
 
@@ -58,6 +58,10 @@ were kept.
 | Rabbie The Moonrabbit race | 4 | **2** | its laptop is a `Building_WorkTable` and its printer that bench's facility |
 | Wall Decorations | 22 | **12** | eight 2x1 ivy patterns, a `Building_PowerSwitch`, a wall socket |
 | UNAGI Decorative Furniture | 7 | **4** | a 3x3 and a 2x2 stained glass are too large |
+
+## One object from Chinese Traditional Cultural Things Expanded
+
+The decorative incense burner `Chi_XiangLu` of [Chinese Traditional Cultural Things Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2877536640) is registered with Knick Knacks like any other source: layer moved to `BuildingOnTop`, three clutter tags. Its def and texture stay in that mod; nothing is copied. The rest of that mod is furniture on the floor or functional buildings and is left alone. Its `LoadFolders.xml` declares RimWorld versions up to 1.5 only, so whether the burner is found on 1.6 is checked in game.
 
 ## The limit that XML cannot get around
 
@@ -106,3 +110,5 @@ when coverage is total.
 ## License and attribution
 
 MIT. The mod contains no file belonging to anyone else; see [ATTRIBUTION.md](ATTRIBUTION.md).
+
+

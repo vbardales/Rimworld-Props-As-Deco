@@ -1,40 +1,43 @@
-# Journal des modifications
+# Changelog
 
-Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
-Ce fichier sert au dépôt et à rédiger les notes de version Steam ; RimWorld ne l'affiche pas en jeu.
+Format inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+This file serves the repository and the drafting of the Steam release notes; RimWorld does not show it in game.
 
-## [1.0.0] — non publié
+## [Unreleased]
 
-Première version. RimWorld 1.6. Aucun code, aucune def, aucun fichier d'autrui : uniquement des
-patchs xpath.
+First version. RimWorld 1.6. No code, no def, no file of anyone else's: only xpath patches.
 
-### Surfaces — 330 objets confiés à Knick Knacks
+### Surfaces: 330 objects handed to Knick Knacks
 
-Quinze mods sources. Les objets reçoivent `SEX_Clutter` plus `SEX_BedroomClutter` ou
-`SEX_DiningRoomClutter` selon la pièce. Un colon en récréation va les chercher et les pose.
+Fifteen source mods. The objects receive `SEX_Clutter` plus `SEX_BedroomClutter` or
+`SEX_DiningRoomClutter` depending on the room. A colonist on recreation fetches them and puts them down.
 
-Trois conditions structurelles décident de l'éligibilité : empreinte 1x1,
-`altitudeLayer BuildingOnTop`, `isEdifice false`. Vingt et un objets posés en
-`BuildingBelowTop` ou en couche `Item` sont convertis par conditionnel.
+Three structural conditions decide eligibility: 1x1 footprint,
+`altitudeLayer BuildingOnTop`, `isEdifice false`. Twenty-one objects laid out in `BuildingBelowTop`
+or on the `Item` layer are converted by a conditional.
 
-### Murs — 18 objets confiés à Colonists' Deco
+### Walls: 18 objects handed to Colonists' Deco
 
-Trois mods sources. Contrat plus lourd : `thingClass`, `CompProperties_Decoration` et
-`modExtensions`, dont deux référencent l'assembly du mod. Tout est sous
-`PatchOperationFindMod`, avec **un garde par def** et non un pour tout le fichier — une
-`PatchOperationSequence` s'arrête à la première opération qui échoue.
+Three source mods. Heavier contract: `thingClass`, `CompProperties_Decoration` and
+`modExtensions`, two of which reference the mod's assembly. Everything sits under
+`PatchOperationFindMod`, with **one guard per def** and not one for the whole file, because a
+`PatchOperationSequence` stops at the first operation that fails.
 
-### Masquage de l'Architecte
+### One object from Chinese Traditional Cultural Things Expanded
 
-Diner Supplies et Office Supplies sont les deux seules sources couvertes à 100 %. Leurs entrées
-sont retirées de l'onglet Mobilier vanilla : une opération par mod, la catégorie étant portée par
-leur unique base abstraite. Non généralisable — ailleurs la couverture est partielle et masquer
-reviendrait à supprimer.
+The decorative incense burner `Chi_XiangLu` is registered with Knick Knacks by a patch on the source's own def (layer, non-edifice, three clutter tags). Nothing is copied from that mod. Its `LoadFolders.xml` declares versions up to 1.5 only: presence on 1.6 is to be confirmed in game.
 
-### Ce qui a été délibérément écarté
+### Architect menu hiding
 
-Le tri sémantique a coupé bien plus que le tri structurel. Les 204 décalcomanies d'Outer Rim et
-les 43 logos de Miniature Props sont en couche sol ; les quatorze « conformes » de Gerrymon's
-Graveyard sont des pierres tombales ; l'art de Marketable Craftsmanship est crafté et le donner
-gratuitement casserait l'économie ; `ucp_wallswitch` est un `Building_PowerSwitch` et
-`LSK_RB_Laptop` un `Building_WorkTable`. Le détail est en tête de chaque fichier de patch.
+Diner Supplies and Office Supplies are the only two sources covered at 100 %. Their entries
+are removed from the vanilla Furniture tab: one operation per mod, the category being carried by
+their single abstract base. Not generalisable: elsewhere coverage is partial and hiding
+would amount to deleting.
+
+### What was deliberately left out
+
+Semantic sorting cut far more than structural sorting. The 204 Outer Rim decals and
+the 43 Miniature Props logos are on the floor layer; the fourteen "conforming" defs of Gerrymon's
+Graveyard are headstones; Marketable Craftsmanship art is crafted and giving it away
+would break the economy; `ucp_wallswitch` is a `Building_PowerSwitch` and
+`LSK_RB_Laptop` a `Building_WorkTable`. The detail sits at the top of each patch file.

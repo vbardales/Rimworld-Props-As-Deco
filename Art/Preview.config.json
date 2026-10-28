@@ -1,0 +1,5 @@
+{"panel":{"title":"Props as Deco","titleSize":44,"titleParts":[{"text":"Props as Deco"}],"tagInline":false,"copyLines":["Turn useful props into decoration.","Patches for Knick Knacks and Colonists' Deco."]},
+"backgroundFile":"Preview-source.png",
+"echo":{"file":"echo-concept.png","color":"var(--accent)","width":185,"height":170},
+"icon":{"file":"ModIcon-source.png"},
+"palette":{"veil":"#33291F","inkPrimary":"#F5EFE5","inkSecondary":"#B8C98A","accent":"#D58A45","badgeInk":"#17120E"}}

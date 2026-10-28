@@ -42,6 +42,7 @@ Nothing is taken from any of them. The number is how many objects are handed to 
 | Gerrymon's Misc Props: Graveyard | Gerrymon | [3780458386](https://steamcommunity.com/sharedfiles/filedetails/?id=3780458386) | 3 |
 | [ATW] House Decor | MG_Atwood | [3535047810](https://steamcommunity.com/sharedfiles/filedetails/?id=3535047810) | 2 |
 | Rabbie The Moonrabbit race | Runne Latki | [1837246563](https://steamcommunity.com/sharedfiles/filedetails/?id=1837246563) | 2 |
+| Chinese Traditional Cultural Things Expanded | Diamond.J, DaJian, Frolg, TangWan, XF and contributors | [2877536640](https://steamcommunity.com/sharedfiles/filedetails/?id=2877536640) | 1 (`Chi_XiangLu`, patched in place) |
 
 ### Walls
 
@@ -58,3 +59,10 @@ on a mod being present comes from its `SurfaceBlacklist.xml`.
 
 Not a line is copied from any of these mods; it is the methods that are borrowed.
 
+## Halloween Monster Mash Renew (unofficial)
+
+- **Adapted by:** Nelim, from [KD] Killer_Diller's "Hallowen Monster Mash"
+- **Taken:** nothing.
+- **Patched in place:** two of its seven props — the unlit jack-o'-lantern and the fake spider —
+  which are moved to `BuildingOnTop`, made non-edifice, and tagged as clutter. The other five are
+  left alone: three stand on the floor, and two hang but carry no `canPlaceOverWall`.
