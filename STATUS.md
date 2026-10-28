@@ -26,7 +26,7 @@ remaining:
   - "2026-10-28: unverified: in game, nothing ran: the Pickle suite (3 passes, 3 scenarios) and the manual scenarios 2 to 4 and 6 to 10 of TESTING.md. Hard dependencies of the staged sources are missing from the wsl-deps maps until a first run names them; three initial diagnostic tickets filed on fa6a63b: chinese 20261028-181639-637-89de, surfaces 20261028-181640-626-3b18, walls 20261028-181641-548-1dfe (owner this session; results in .pickle-state/rimworld-ticket-dispatcher/results/<id>.json and Tests/Pickle/Inbox/initial-<pass>). After RUN_DONE: read summary.json then junit.xml, triage Inbox, replay any red scenario alone, then set code_review_sha over 502ec15..HEAD, tested_on, and move to shootGallery"
   - "2026-10-28: unverified: repository made public after delete and recreate with a fresh history (old commits with the Chinese texture no longer resolve on GitHub); topics set. Left: GitHub social preview upload of Mod/About/Preview.png and social_preview_sha256 (required from writeDocs); Workshop item 3811383060 (old name and description) set public by the owner by hand, description updated by CI or the Steam page"
 social_preview_sha256: ba5bb37afd0ddd0eb683d1273bbdcbf14c938fa5ff6dfc26e35a524ebbbb48a9
-protocols_read_sha: 423fcca182217a42f7e921acbbdbb5ba9286ab84
+protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
 updated: 2026-10-28
 ---
 
