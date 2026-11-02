@@ -18,7 +18,7 @@ workshop: private item 3811383060 (PublishedFileId.txt)
 published: no
 tested_on: never
 remaining:
-  - "2026-10-28: unverified: writeTests work left once 1.c is closed: 7.b Tests/Test-ChinesePatch.ps1 not declared in scripts/LOCAL_SCRIPTS.md (it still lists Run-Chinese.ps1 and Test-Chinese.ps1), 7.d Pickle decision written, 7.f tested sha, 7.i move to playTests"
+  - "2026-11-02: replay-audit: 7.b Tests/Test-ChinesePatch.ps1 is declared in scripts/LOCAL_SCRIPTS.md (row not yet validated by Virginie, Audit validates); 8.e walls initial ticket 20261028-181641-548-1dfe red (vanilla GameComponent_Anomaly 'Collection was modified', no patch error seen), replay alone filed 20261102-203420-358-3fe0 on 6716bd6, queued"
   - "2026-10-28: unverified: 4.a packageId of Rabbie The Moonrabbit race (runnelatki.rabbieracemod, Workshop 1837246563) not verifiable: its folder is absent from the local Workshop content; the id is kept from the earlier audit"
   - "2026-10-28: unverified: 1.a duplicate check done with owner approval (Search-Workshop.sh, pattern SEX_Clutter|SEX_ClutterableSurface|Mlie.ColonistsDeco|DecoModExtension, *.xml, 9550 of 9552 folders, 843 lines): only the two engines, our own item 3811383060, our RimScent Extended (own defs) and Junkie Knick Knacks 3607387774 (bazoka81, adds its own clutter defs, not a patch of other mods' props) hold the tags. No equivalent mod found; one route only, not a proof of absence"
   - "2026-10-28: unverified: GitHub topics and settings of the private repo (privé: no social preview)"
@@ -27,7 +27,7 @@ remaining:
   - "2026-10-28: unverified: repository made public after delete and recreate with a fresh history (old commits with the Chinese texture no longer resolve on GitHub); topics set. Left: GitHub social preview upload of Mod/About/Preview.png and social_preview_sha256 (required from writeDocs); Workshop item 3811383060 (old name and description) set public by the owner by hand, description updated by CI or the Steam page"
 social_preview_sha256: ba5bb37afd0ddd0eb683d1273bbdcbf14c938fa5ff6dfc26e35a524ebbbb48a9
 protocols_read_sha: 4800d053d2f8cd11436718b6f9e472b000b0f53e
-updated: 2026-10-28
+updated: 2026-11-02
 ---
 
 # Props as Deco: status
