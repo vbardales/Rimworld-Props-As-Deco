@@ -7,11 +7,11 @@
 		     silencieux en 1.6 : il ecrit une erreur rouge par operation. -->
     <li IfModActive="leo.propsdecor">MiniatureProps</li>
     <li IfModActive="runnelatki.rabbieracemod">RabbieRace</li>
-    <li IfModActive="ucp.walldecorations,mlie.colonistsdeco">WallDecorations</li>
-    <li IfModActive="unagi.funiture.build.window,mlie.colonistsdeco">UNAGIWall</li>
-    <li IfModActive="runnelatki.rabbieracemod,mlie.colonistsdeco">RabbieWall</li>
-    <li IfModActive="ponpeco.pfkidsroom">PonpecoKids</li>
-    <li IfModActive="brucethemoose.hotspring,vanillaexpanded.vfepropsanddecor">GerryHotspring</li>
+    <li IfModActiveAll="ucp.walldecorations,mlie.colonistsdeco">WallDecorations</li>
+    <li IfModActiveAll="unagi.funiture.build.window,mlie.colonistsdeco">UNAGIWall</li>
+    <li IfModActiveAll="runnelatki.rabbieracemod,mlie.colonistsdeco">RabbieWall</li>
+    <li IfModActive="ponpeco.PFKidsRoom">PonpecoKids</li>
+    <li IfModActiveAll="brucethemoose.hotspring,vanillaexpanded.vfepropsanddecor">GerryHotspring</li>
     <li IfModActive="seti.random.decor">MagicalDecor</li>
     <li IfModActive="mgatwood.housedecor">ATWHouse</li>
     <li IfModActive="gmmp.graveyard">GerryGraveyard</li>
