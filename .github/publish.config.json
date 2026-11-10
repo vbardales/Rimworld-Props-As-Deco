@@ -1,0 +1,12 @@
+{
+  "templateStamp": "ed4669c0a5bf",
+  "workshopId": "3811383060",
+  "packageId": "nelim.propsasdeco",
+  "releaseTitle": "Props as Deco {version}",
+  "requirePaths": [
+    "LoadFolders.xml"
+  ],
+  "forbidPaths": [],
+  "previewFile": "About/Preview.png",
+  "galleryDir": "Art/Gallery"
+}
