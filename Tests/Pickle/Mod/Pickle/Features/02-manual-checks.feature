@@ -17,10 +17,10 @@ Feature: Props as Deco defs after patching
   @requires:ponpeco.PFKidsRoom
   Scenario: patched defs survive a save and reload without error (TESTING.md 6)
     Given the save "test-colony" is loaded
-    When the error log is marked
+    And Nelim's Pickle Tools: the error log is marked
     And I save and reload
     And I wait 120 ticks
-    Then no error was logged since the error log was marked
+    Then Nelim's Pickle Tools: no error was logged since the error log was marked
 
   @requires:DSP.LUN
   Scenario: a diner object carries the clutter tags (TESTING.md 7)
