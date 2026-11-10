@@ -8,7 +8,7 @@
      NON REPRIS : le vitrail Rose en 3x3 et le Tate en 2x2, trop grands pour la logique de pose
      de Colonists' Deco ; et UNAstainedglass_A, qui n'a pas canPlaceOverWall.
 
-     TOUT EST SOUS PatchOperationFindMod. Sans Colonists' Deco, `ColonistsDeco.WallDeco_Default`
+     TOUT EST GARDE PAR LoadFolders (IfModActive: mod source ET mlie.colonistsdeco), car PatchOperationFindMod compare le NOM du mod et ne matchait pas en test. Sans Colonists' Deco, `ColonistsDeco.WallDeco_Default`
      et `ColonistsDeco.DecoModExtension` ne resolvent pas - et une `<modExtensions>` non resolue
      fait echouer la def ENTIERE, pas seulement l'extension.
 
@@ -22,14 +22,8 @@
      Chaque groupe est conditionnel : le noeud est cree s'il manque, complete s'il existe. -->
 
   <!--===== UNAstainedglass_Maru : Round stained glass =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="UNAstainedglass_Maru"]/thingClass</xpath>
@@ -96,18 +90,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== UNA_Deco_WindowA : Decorative window =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="UNA_Deco_WindowA"]/thingClass</xpath>
@@ -174,18 +161,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== UNABlackWindow : Black window =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="UNABlackWindow"]/thingClass</xpath>
@@ -252,18 +232,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== UNA_WallMadonew : Window ornament =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]/thingClass</xpath>
@@ -330,7 +303,6 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
 </Patch>

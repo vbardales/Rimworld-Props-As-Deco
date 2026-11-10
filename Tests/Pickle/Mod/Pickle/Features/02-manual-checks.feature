@@ -52,26 +52,3 @@ Feature: Props as Deco defs after patching
   Scenario: an office object carries the clutter tag (diagnostic)
     Given the save "test-colony" is loaded
     Then Nelim's Pickle Tools: the def "OS_Magnifier" of type "ThingDef" has "SEX_Clutter" in the list "building.buildingTags"
-
-  @requires:ponpeco.PFKidsRoom
-  Scenario: where the ball def comes from (diagnostic)
-    Given the save "test-colony" is loaded
-    Then Nelim's Pickle Tools: def "PFK_Ball" of type "ThingDef" field "modContentPack.PackageId" is "x"
-    And Nelim's Pickle Tools: def "PFK_Ball" of type "ThingDef" field "building.isEdifice" is "x"
-    And Nelim's Pickle Tools: def "PFK_Ball" of type "ThingDef" field "label" is "x"
-    And Nelim's Pickle Tools: def "PFK_Ball" of type "ThingDef" field "description" is "x"
-
-  @requires:ponpeco.PFKidsRoom
-  Scenario: probe label of PFK_Ball
-    Given the save "test-colony" is loaded
-    Then Nelim's Pickle Tools: def "PFK_Ball" of type "ThingDef" field "label" is "PROBE"
-
-  @requires:lunartika.OS
-  Scenario: probe label of OS_Magnifier
-    Given the save "test-colony" is loaded
-    Then Nelim's Pickle Tools: def "OS_Magnifier" of type "ThingDef" field "label" is "PROBE"
-
-  @requires:ucp.WallDecorations
-  Scenario: probe label of ucp_corkboard
-    Given the save "test-colony" is loaded
-    Then Nelim's Pickle Tools: def "ucp_corkboard" of type "ThingDef" field "label" is "PROBE"

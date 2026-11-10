@@ -16,7 +16,7 @@
        remplacer son thingClass casserait sa fonction.
      - ucp_wallsocket : porte des composants electriques, meme prudence.
 
-     TOUT EST SOUS PatchOperationFindMod. Sans Colonists' Deco, `ColonistsDeco.WallDeco_Default`
+     TOUT EST GARDE PAR LoadFolders (IfModActive: mod source ET mlie.colonistsdeco), car PatchOperationFindMod compare le NOM du mod et ne matchait pas en test. Sans Colonists' Deco, `ColonistsDeco.WallDeco_Default`
      et `ColonistsDeco.DecoModExtension` ne resolvent pas - et une `<modExtensions>` non resolue
      fait echouer la def ENTIERE, pas seulement l'extension.
 
@@ -30,14 +30,8 @@
      Chaque groupe est conditionnel : le noeud est cree s'il manque, complete s'il existe. -->
 
   <!--===== ucp_toiletpaper : Toilet paper =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_toiletpaper"]/thingClass</xpath>
@@ -104,18 +98,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_mirror : Wall mirror =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_mirror"]/thingClass</xpath>
@@ -182,18 +169,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_mirrorlight : Lit wall mirror =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/thingClass</xpath>
@@ -260,18 +240,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_exitsigngreen : Exit sign =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_exitsigngreen"]/thingClass</xpath>
@@ -338,18 +311,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_exitsignred : Exit sign =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_exitsignred"]/thingClass</xpath>
@@ -416,18 +382,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_corkboard : Corkboard =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_corkboard"]/thingClass</xpath>
@@ -494,18 +453,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_ivyleaves : Ivy =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_ivyleaves"]/thingClass</xpath>
@@ -574,18 +526,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_ivyleavescorner : Ivy corner =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]/thingClass</xpath>
@@ -654,18 +599,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_ivyleavesinner : Ivy nook =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]/thingClass</xpath>
@@ -734,18 +672,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_ivyleavesorange : Gauranlen leaves =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]/thingClass</xpath>
@@ -814,18 +745,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_ivyleavescornerorange : Gauranlen corner =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]/thingClass</xpath>
@@ -894,18 +818,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== ucp_ivyleavesinnerorange : Gauranlen nook =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]/thingClass</xpath>
@@ -974,7 +891,6 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
 </Patch>

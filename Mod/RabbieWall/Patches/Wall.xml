@@ -9,7 +9,7 @@
      NON REPRIS : le miroir et les fenetres de mur, qui sont en couche Building sans
      canPlaceOverWall ; le mur lui-meme, en Graphic_Appearances.
 
-     TOUT EST SOUS PatchOperationFindMod. Sans Colonists' Deco, `ColonistsDeco.WallDeco_Default`
+     TOUT EST GARDE PAR LoadFolders (IfModActive: mod source ET mlie.colonistsdeco), car PatchOperationFindMod compare le NOM du mod et ne matchait pas en test. Sans Colonists' Deco, `ColonistsDeco.WallDeco_Default`
      et `ColonistsDeco.DecoModExtension` ne resolvent pas - et une `<modExtensions>` non resolue
      fait echouer la def ENTIERE, pas seulement l'extension.
 
@@ -23,14 +23,8 @@
      Chaque groupe est conditionnel : le noeud est cree s'il manque, complete s'il existe. -->
 
   <!--===== LSK_SHS_Elegance_Window : Elegant window =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="LSK_SHS_Elegance_Window"]/thingClass</xpath>
@@ -97,18 +91,11 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
   <!--===== LSK_SHS_Wall_Light : Wall lamp =====-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>[1.6] Colonists' Deco (Continued)</li>
-      <li>Colonists' Deco (Continued)</li>
-      <li>Mlie.ColonistsDeco</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+  <Operation Class="PatchOperationSequence">
+    <operations>
 
         <li Class="PatchOperationConditional">
           <xpath>Defs/ThingDef[defName="LSK_SHS_Wall_Light"]/thingClass</xpath>
@@ -175,7 +162,6 @@
         </li>
 
       </operations>
-    </match>
   </Operation>
 
 </Patch>
