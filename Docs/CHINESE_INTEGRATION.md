@@ -4,7 +4,7 @@ Source: Workshop 2877536640 (`Dajian.ChiTeaditional.Expanded`), authors Diamond.
 
 ## What the patch does
 
-`Mod/ChineseTraditional/Patches/Deco.xml`, loaded from `LoadFolders.xml` under `IfModActive="dajian.chiteaditional.expanded"`: layer `Item` to `BuildingOnTop`, `isEdifice false`, tags `SEX_Clutter`, `SEX_BedroomClutter`, `SEX_DiningRoomClutter` so Knick Knacks can place it on tables. Cost, quality, Beauty facility (+6, two links, radius 2), research, menu category and passability remain the source's own. Knick Knacks spawns the object with `GenSpawn` (240 ticks job), at no material cost.
+`Mod/ChineseTraditional/Patches/ChineseTraditional-Deco.xml`, loaded from `LoadFolders.xml` under `IfModActive="dajian.chiteaditional.expanded"`: layer `Item` to `BuildingOnTop`, `isEdifice false`, tags `SEX_Clutter`, `SEX_BedroomClutter`, `SEX_DiningRoomClutter` so Knick Knacks can place it on tables. Cost, quality, Beauty facility (+6, two links, radius 2), research, menu category and passability remain the source's own. Knick Knacks spawns the object with `GenSpawn` (240 ticks job), at no material cost.
 
 ## Why only this object
 

@@ -23,7 +23,7 @@ Assert-True (@(Get-ChildItem $chineseDir -Recurse -Filter '*.xml' | Where-Object
 [xml]$lf = Get-Content (Join-Path $mod 'LoadFolders.xml')
 $branch = @($lf.SelectNodes('/loadFolders/v1.6/li[text()="ChineseTraditional"]'))
 Assert-True ($branch.Count -eq 1 -and $branch[0].GetAttribute('IfModActive') -eq $sourceId) 'Patch folder not guarded by the source mod'
-[xml]$p = Get-Content (Join-Path $chineseDir 'Patches/Deco.xml')
+[xml]$p = Get-Content (Join-Path $chineseDir 'Patches/ChineseTraditional-Deco.xml')
 $xpaths = @($p.SelectNodes('//xpath') | ForEach-Object { $_.InnerText })
 Assert-True ($xpaths.Count -gt 0) 'Patch has no operation'
 foreach ($xp in $xpaths) { Assert-True ($xp -match 'defName="Chi_XiangLu"') "xpath outside Chi_XiangLu: $xp" }
@@ -47,7 +47,7 @@ foreach ($li in @($lf.SelectNodes('/loadFolders/v1.6/li[@IfModActive]'))) {
 }
 
 # Patches run before inheritance: an xpath through /building matches nothing on a def that only inherits it, so each such def first gets its own <building/>.
-foreach ($pf in @(Get-ChildItem (Join-Path $mod '*/Patches/Deco.xml'))) {
+foreach ($pf in @(Get-ChildItem (Join-Path $mod '*/Patches/ChineseTraditional-Deco.xml'))) {
     [xml]$px = Get-Content $pf.FullName
     $ops = @($px.SelectNodes('//Operation[xpath]'))
     $names = @(); foreach ($o in $ops) { if ($o.xpath -match 'defName="([^"]+)"\]/building') { $names += $Matches[1] } }
@@ -57,6 +57,12 @@ foreach ($pf in @(Get-ChildItem (Join-Path $mod '*/Patches/Deco.xml'))) {
         Assert-True ($null -ne $first -and $first.OuterXml.Contains('ensure-own-building')) "$($pf.Directory.Parent.Name): $d has no ensure-own-building before its building operations"
     }
 }
+
+# RimWorld keys patch files by their path inside the load folder: two files named Patches/Deco.xml in different load
+# folders replace each other, and only the last active one runs (found 2026-11-10: most patches never applied).
+$dupe = @(Get-ChildItem $mod -Recurse -File -Filter '*.xml' | Where-Object { $_.FullName -match '[\/]Patches[\/]' } |
+    Group-Object Name | Where-Object Count -gt 1)
+Assert-True ($dupe.Count -eq 0) ("Patch file name used in several load folders: " + ($dupe.Name -join ', '))
 
 if ($script:findings.Count) { $script:findings; exit 1 }
 Write-Output 'PASS: Rule-OwnValues'

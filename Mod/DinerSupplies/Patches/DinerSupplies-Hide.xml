@@ -4,7 +4,7 @@
   <!-- Retire les treize objets de « Diner Supplies » de l'onglet Mobilier de l'Architecte.
 
        POURQUOI C'EST SANS PERTE ICI, et seulement ici : les treize defs du mod sont reprises
-       toutes les treize par le fichier Deco.xml a cote. Couverture 100 %. Tu ne peux plus les
+       toutes les treize par le fichier DinerSupplies-Deco.xml a cote. Couverture 100 %. Tu ne peux plus les
        poser a la main, mais elles continuent d'apparaitre - ce sont les colons qui les posent,
        au titre du loisir SEX_Decorating.
 
