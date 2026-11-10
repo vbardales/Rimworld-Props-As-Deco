@@ -60,3 +60,18 @@ Feature: Props as Deco defs after patching
     And Nelim's Pickle Tools: def "PFK_Ball" of type "ThingDef" field "building.isEdifice" is "x"
     And Nelim's Pickle Tools: def "PFK_Ball" of type "ThingDef" field "label" is "x"
     And Nelim's Pickle Tools: def "PFK_Ball" of type "ThingDef" field "description" is "x"
+
+  @requires:ponpeco.PFKidsRoom
+  Scenario: probe label of PFK_Ball
+    Given the save "test-colony" is loaded
+    Then Nelim's Pickle Tools: def "PFK_Ball" of type "ThingDef" field "label" is "PROBE"
+
+  @requires:lunartika.OS
+  Scenario: probe label of OS_Magnifier
+    Given the save "test-colony" is loaded
+    Then Nelim's Pickle Tools: def "OS_Magnifier" of type "ThingDef" field "label" is "PROBE"
+
+  @requires:ucp.WallDecorations
+  Scenario: probe label of ucp_corkboard
+    Given the save "test-colony" is loaded
+    Then Nelim's Pickle Tools: def "ucp_corkboard" of type "ThingDef" field "label" is "PROBE"
