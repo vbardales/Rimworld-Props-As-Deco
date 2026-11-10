@@ -4,7 +4,7 @@ No C#, no def of its own: every integration is an xpath patch on a source mod's 
 
 ## Static
 
-`pwsh -File Tests/Test-ChinesePatch.ps1`: XML well-formed, nothing copied from the Chinese source (no def, texture or assembly), patch folder guarded by the source mod in `LoadFolders.xml`, xpath limited to `Chi_XiangLu`, three clutter tags, layer and non-edifice set, source mod optional in `loadAfter`, no stale incompatibility. 64 assertions, last run 2026-10-28.
+`pwsh -File Tests/Rule-OwnValues.ps1` (run by the generated Tests/Test-Mod.ps1 after the shared checks): nothing copied from the Chinese source (no def, texture or assembly), patch folder guarded by the source mod in `LoadFolders.xml`, xpath limited to `Chi_XiangLu`, three clutter tags, layer and non-edifice set, source mod optional in `loadAfter`, no stale incompatibility. 64 assertions, last run 2026-10-28.
 
 Shared validators (protocols root `scripts/`): `Check-ModBasics.ps1`, `Check-Translations.ps1` (nothing to translate, no def of ours), `Check-Status.ps1`.
 
