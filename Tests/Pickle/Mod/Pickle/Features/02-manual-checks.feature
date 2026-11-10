@@ -42,3 +42,13 @@ Feature: Props as Deco defs after patching
   Scenario: the ball carries the clutter tag (diagnostic for TESTING.md 8)
     Given the save "test-colony" is loaded
     Then Nelim's Pickle Tools: the def "PFK_Ball" of type "ThingDef" has "SEX_Clutter" in the list "building.buildingTags"
+
+  @requires:ponpeco.PFKidsRoom
+  Scenario: the cushion carries the clutter tag (diagnostic for TESTING.md 8)
+    Given the save "test-colony" is loaded
+    Then Nelim's Pickle Tools: the def "PFK_Cushion" of type "ThingDef" has "SEX_Clutter" in the list "building.buildingTags"
+
+  @requires:lunartika.OS
+  Scenario: an office object carries the clutter tag (diagnostic)
+    Given the save "test-colony" is loaded
+    Then Nelim's Pickle Tools: the def "OS_Magnifier" of type "ThingDef" has "SEX_Clutter" in the list "building.buildingTags"
