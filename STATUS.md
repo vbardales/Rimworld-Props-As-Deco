@@ -16,18 +16,18 @@ translation_fr: not_applicable   # no text to translate; the owner may still con
 dependencies: declared         # optional only: loadAfter + IfModActive, no modDependencies (see Dependencies 2026-10-28)
 workshop: private item 3811383060 (PublishedFileId.txt)
 published: no
-tested_on: never
+tested_on: "2026-11-03 pickle fa6a63b (chinese, surfaces, replay-walls green)"
 remaining:
-  - "2026-11-02: replay-audit: 7.b Tests/Test-ChinesePatch.ps1 is declared in scripts/LOCAL_SCRIPTS.md (row not yet validated by Virginie, Audit validates); 8.e walls initial ticket 20261028-181641-548-1dfe red (vanilla GameComponent_Anomaly 'Collection was modified', no patch error seen), replay alone filed 20261102-203420-358-3fe0 on 6716bd6, queued"
+  - "2026-11-10: playTests: three Pickle scenarios green on fa6a63b (chinese 20261028-181639-637-89de, surfaces 20261028-181640-626-3b18, walls replay 20261102-203420-358-3fe0; initial walls red was vanilla GameComponent_Anomaly, deleted from Inbox, others minified to Evidence). 7.b Tests/Test-ChinesePatch.ps1 row in scripts/LOCAL_SCRIPTS.md not yet validated by Virginie (Audit validates). Left at playTests: 8.m code review (code_review_sha over 502ec15..HEAD), manual TESTING.md scenarios, tested_1_7. Art/Preview.config.json has an uncommitted edit from another session (new format), not touched here"
   - "2026-10-28: unverified: 4.a packageId of Rabbie The Moonrabbit race (runnelatki.rabbieracemod, Workshop 1837246563) not verifiable: its folder is absent from the local Workshop content; the id is kept from the earlier audit"
   - "2026-10-28: unverified: 1.a duplicate check done with owner approval (Search-Workshop.sh, pattern SEX_Clutter|SEX_ClutterableSurface|Mlie.ColonistsDeco|DecoModExtension, *.xml, 9550 of 9552 folders, 843 lines): only the two engines, our own item 3811383060, our RimScent Extended (own defs) and Junkie Knick Knacks 3607387774 (bazoka81, adds its own clutter defs, not a patch of other mods' props) hold the tags. No equivalent mod found; one route only, not a proof of absence"
   - "2026-10-28: unverified: GitHub topics and settings of the private repo (privé: no social preview)"
   - "2026-10-28: unverified: the Chinese source declares v1.2 to v1.5 in LoadFolders.xml, no v1.6 block: confirm in game that RimWorld 1.6 falls back to v1.5 so Chi_XiangLu exists for the patch (TESTING.md scenario 1)"
-  - "2026-10-28: unverified: in game, nothing ran: the Pickle suite (3 passes, 3 scenarios) and the manual scenarios 2 to 4 and 6 to 10 of TESTING.md. Hard dependencies of the staged sources are missing from the wsl-deps maps until a first run names them; three initial diagnostic tickets filed on fa6a63b: chinese 20261028-181639-637-89de, surfaces 20261028-181640-626-3b18, walls 20261028-181641-548-1dfe (owner this session; results in .pickle-state/rimworld-ticket-dispatcher/results/<id>.json and Tests/Pickle/Inbox/initial-<pass>). After RUN_DONE: read summary.json then junit.xml, triage Inbox, replay any red scenario alone, then set code_review_sha over 502ec15..HEAD, tested_on, and move to shootGallery"
+  - "2026-10-28: unverified: manual scenarios 2 to 4 and 6 to 10 of TESTING.md not played (Pickle covers only the three patch-applies scenarios)"
   - "2026-10-28: unverified: repository made public after delete and recreate with a fresh history (old commits with the Chinese texture no longer resolve on GitHub); topics set. Left: GitHub social preview upload of Mod/About/Preview.png and social_preview_sha256 (required from writeDocs); Workshop item 3811383060 (old name and description) set public by the owner by hand, description updated by CI or the Steam page"
 social_preview_sha256: ba5bb37afd0ddd0eb683d1273bbdcbf14c938fa5ff6dfc26e35a524ebbbb48a9
-protocols_read_sha: 4800d053d2f8cd11436718b6f9e472b000b0f53e
-updated: 2026-11-02
+protocols_read_sha: 8fe30d0c5fb828fe8a7766a558ded56d3cea7772
+updated: 2026-11-10
 ---
 
 # Props as Deco: status
