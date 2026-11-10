@@ -28,7 +28,7 @@ remaining:
   - "2026-10-28: unverified: manual scenarios 2 to 4 and 6 to 10 of TESTING.md not played (Pickle covers only the three patch-applies scenarios)"
   - "2026-10-28: unverified: repository made public after delete and recreate with a fresh history (old commits with the Chinese texture no longer resolve on GitHub); topics set. Left: GitHub social preview upload of Mod/About/Preview.png and social_preview_sha256 (required from writeDocs); Workshop item 3811383060 (old name and description) set public by the owner by hand, description updated by CI or the Steam page"
 social_preview_sha256: ba5bb37afd0ddd0eb683d1273bbdcbf14c938fa5ff6dfc26e35a524ebbbb48a9
-protocols_read_sha: 8fe30d0c5fb828fe8a7766a558ded56d3cea7772
+protocols_read_sha: 41435581d5b373fc72b95b1c83080954381bd6a4
 updated: 2026-11-10
 ---
 
