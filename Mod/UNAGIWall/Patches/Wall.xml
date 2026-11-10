@@ -24,6 +24,7 @@
   <!--===== UNAstainedglass_Maru : Round stained glass =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -101,6 +102,7 @@
   <!--===== UNA_Deco_WindowA : Decorative window =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -178,6 +180,7 @@
   <!--===== UNABlackWindow : Black window =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -255,6 +258,7 @@
   <!--===== UNA_WallMadonew : Window ornament =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>

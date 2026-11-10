@@ -37,3 +37,8 @@ Feature: Props as Deco defs after patching
   Scenario: the corkboard carries the decoration comp (TESTING.md 9)
     Given the save "test-colony" is loaded
     Then Nelim's Pickle Tools: the def "ucp_corkboard" of type "ThingDef" has the comp "ColonistsDeco.CompProperties_Decoration"
+
+  @requires:ponpeco.PFKidsRoom
+  Scenario: the ball carries the clutter tag (diagnostic for TESTING.md 8)
+    Given the save "test-colony" is loaded
+    Then Nelim's Pickle Tools: the def "PFK_Ball" of type "ThingDef" has "SEX_Clutter" in the list "building.buildingTags"

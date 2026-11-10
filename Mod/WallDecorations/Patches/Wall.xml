@@ -32,6 +32,7 @@
   <!--===== ucp_toiletpaper : Toilet paper =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -109,6 +110,7 @@
   <!--===== ucp_mirror : Wall mirror =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -186,6 +188,7 @@
   <!--===== ucp_mirrorlight : Lit wall mirror =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -263,6 +266,7 @@
   <!--===== ucp_exitsigngreen : Exit sign =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -340,6 +344,7 @@
   <!--===== ucp_exitsignred : Exit sign =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -417,6 +422,7 @@
   <!--===== ucp_corkboard : Corkboard =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -494,6 +500,7 @@
   <!--===== ucp_ivyleaves : Ivy =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -573,6 +580,7 @@
   <!--===== ucp_ivyleavescorner : Ivy corner =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -652,6 +660,7 @@
   <!--===== ucp_ivyleavesinner : Ivy nook =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -731,6 +740,7 @@
   <!--===== ucp_ivyleavesorange : Gauranlen leaves =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -810,6 +820,7 @@
   <!--===== ucp_ivyleavescornerorange : Gauranlen corner =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -889,6 +900,7 @@
   <!--===== ucp_ivyleavesinnerorange : Gauranlen nook =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>

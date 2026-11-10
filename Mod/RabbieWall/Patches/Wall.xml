@@ -25,6 +25,7 @@
   <!--===== LSK_SHS_Elegance_Window : Elegant window =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
@@ -102,6 +103,7 @@
   <!--===== LSK_SHS_Wall_Light : Wall lamp =====-->
   <Operation Class="PatchOperationFindMod">
     <mods>
+      <li>[1.6] Colonists' Deco (Continued)</li>
       <li>Colonists' Deco (Continued)</li>
       <li>Mlie.ColonistsDeco</li>
     </mods>
