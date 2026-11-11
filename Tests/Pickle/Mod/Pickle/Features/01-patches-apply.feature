@@ -2,7 +2,7 @@
 # of source mods staged by its own pass (wsl-deps.chinese.map, wsl-deps.surfaces.map, wsl-deps.walls.map).
 # Core steps only. A patch whose xpath matches nothing writes one red error per operation, so "no errors were logged"
 # after the load is the assertion. The scenarios of TESTING.md that need a person (placement, drawing order, the
-# colonist decorating a table) stay manual.
+# colonist decorating a table) are game behaviour, n/a (TESTING.md).
 
 Feature: Props as Deco patches apply
 

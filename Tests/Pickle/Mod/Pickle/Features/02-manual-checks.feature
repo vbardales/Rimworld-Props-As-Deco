@@ -1,5 +1,5 @@
 # Def-level part of the manual scenarios of TESTING.md (6 to 10). Placement, drawing order and the colonist
-# decorating a table stay manual.
+# decorating a table are game behaviour, n/a (TESTING.md).
 
 Feature: Props as Deco defs after patching
 
@@ -52,3 +52,16 @@ Feature: Props as Deco defs after patching
   Scenario: an office object carries the clutter tag (diagnostic)
     Given the save "test-colony" is loaded
     Then Nelim's Pickle Tools: the def "OS_Magnifier" of type "ThingDef" has "SEX_Clutter" in the list "building.buildingTags"
+
+  @requires:Dajian.ChiTeaditional.Expanded
+  Scenario: the Chinese incense burner is on the top layer and is no edifice (TESTING.md 2, 3)
+    Given the save "test-colony" is loaded
+    Then Nelim's Pickle Tools: def "Chi_XiangLu" of type "ThingDef" field "altitudeLayer" is "BuildingOnTop"
+    And Nelim's Pickle Tools: def "Chi_XiangLu" of type "ThingDef" field "building.isEdifice" is "false"
+
+  @requires:Dajian.ChiTeaditional.Expanded
+  Scenario: the Chinese incense burner carries the three clutter tags (TESTING.md 2)
+    Given the save "test-colony" is loaded
+    Then Nelim's Pickle Tools: the def "Chi_XiangLu" of type "ThingDef" has "SEX_Clutter" in the list "building.buildingTags"
+    And Nelim's Pickle Tools: the def "Chi_XiangLu" of type "ThingDef" has "SEX_BedroomClutter" in the list "building.buildingTags"
+    And Nelim's Pickle Tools: the def "Chi_XiangLu" of type "ThingDef" has "SEX_DiningRoomClutter" in the list "building.buildingTags"
