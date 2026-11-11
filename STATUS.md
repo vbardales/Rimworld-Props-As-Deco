@@ -28,7 +28,7 @@ remaining:
   - "2026-10-28: unverified: the Chinese source declares v1.2 to v1.5 in LoadFolders.xml, no v1.6 block: confirm in game that RimWorld 1.6 falls back to v1.5 so Chi_XiangLu exists for the patch (TESTING.md scenario 1)"
   - "2026-10-28: unverified: manual scenarios 2 to 4 and 6 to 10 of TESTING.md not played (Pickle covers only the three patch-applies scenarios)"
   - "2026-10-28: unverified: repository made public after delete and recreate with a fresh history (old commits with the Chinese texture no longer resolve on GitHub); topics set. Left: GitHub social preview upload of Mod/About/Preview.png and social_preview_sha256 (required from writeDocs); Workshop item 3811383060 (old name and description) set public by the owner by hand, description updated by CI or the Steam page"
-social_preview_sha256: ba5bb37afd0ddd0eb683d1273bbdcbf14c938fa5ff6dfc26e35a524ebbbb48a9
+social_preview_sha256: e382ce3a31cfbf1bf9f9399babbdf30f1d3a8408a6a645f25788a89bf7c173d7
 protocols_read_sha: e27da08e824e6fdc2bd77f47526e034c94398d51
 updated: 2026-11-10
 ---
